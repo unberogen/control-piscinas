@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)https://www.dfrobot.com/wiki/index.php/Analog_ORP_Meter(SKU:SEN0165) -->
+<html lang="en" dir="ltr" class="client-js ve-available"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Analog ORP Meter(SKU:SEN0165) - DFRobot Electronic Product Wiki and Tutorial: Arduino and Robot Wiki-DFRobot.com</title>
+<script async="" src="./Analog ORP Meter(SKU_SEN0165) - DFRobot Electronic Product Wiki and Tutorial_ Arduino and Robot Wiki-DFRobot.com_files/analytics.js.descarga"></script><script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Analog_ORP_Meter(SKU:SEN0165)","wgTitle":"Analog ORP Meter(SKU:SEN0165)","wgCurRevisionId":37932,"wgRevisionId":37932,"wgArticleId":1927,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Analog_ORP_Meter(SKU:SEN0165)","wgRelevantArticleId":1927,"wgRequestId":"23ed1713f366c14d9510a4bb","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","usePageImages":false,"usePageDescriptions":false},"wgVisualEditorToolbarScrollOffset":0});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup","ext.visualEditor.desktopArticleTarget.init"]);});</script>
+<link rel="stylesheet" href="./Analog ORP Meter(SKU_SEN0165) - DFRobot Electronic Product Wiki and Tutorial_ Arduino and Robot Wiki-DFRobot.com_files/load.php">
+<style>
+.postedit-container{margin:0 auto;position:fixed;top:0;height:0;left:50%;z-index:1000;font-size:13px}.postedit-container:hover{cursor:pointer}.postedit{position:relative;top:0.6em;left:-50%;padding:.6em 3.6em .6em 1.1em;line-height:1.5625em;color:#626465;background-color:#f4f4f4;border:1px solid #dcd9d9;text-shadow:0 0.0625em 0 rgba(255,255,255,0.5);border-radius:5px;box-shadow:0 2px 5px 0 #ccc;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-ms-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out}.skin-monobook .postedit{top:6em !important}.postedit-faded{opacity:0}.postedit-icon{padding-left:41px;  line-height:25px;background-repeat:no-repeat;background-position:8px 50%}.postedit-icon-checkmark{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB9ElEQVR4AZWRA3AYURQArxrVHtW2bdu2bdu2zdi2bdu2bWxs7zeehZaw4f70kbs+zI3e/nWK+RWx3aOFlrL56Sy5SxrruG69hlv6OyK+mz+8KDSXdXembj0ispT7tjs4ZTIbpYBvxGSGKzZTeFrb7W/meN002swFs0U8ttpHTkF2BvCqWQrW35929bTsKm5Zb+SEwWwcY8wAngB9m7Z+d+rIPZ/npdy12M5p47n8dXsCYAf0qPy06eGMdktuDu9Qf+JmKl3SWM91qzVcN9tAbEYkwMaq0tyb1m/To5kP170el/BK8/qa6sJr70ydf+T/Uu5ab+Oo/lS0AkUBpIFWlZ9WPhxpse/PHO7YbOOczjL0vZV2lNxPPtG73dYXM+xvm2znrOl83tidoqCwMBgYXsPFB0on5S6pr+eK5TKuW67lgvaKvF8mL1dtfTL32FHxRdyx3cQpg7m4x9sCXKkTIzA4LDH44zWdzaUf71hv5rTG4uyzcusybxSX7aThbMQ8XgCYAp3rzTTQOiIh9PNlzY3FSuZxrzjme1Y7uGS6kjsWO4jPjM4FVjRZsvD4kO9XtTZzQn82NyzWc0B7AmZh6gA/hOYSGhfw9YbOVnarj+S7800AL2BIsxUAbWNToj7bhBuQmZcOsFdoKUC74rGheCwXmqAIQTc9jQcrADIAAAAASUVORK5CYII=);background-image:url(/wiki/resources/src/mediawiki.action/images/green-checkmark.png?d94f1)!ie;background-position:left}.postedit-close{position:absolute;padding:0 .8em;right:0;top:0;font-size:1.25em;font-weight:bold;line-height:2.3em;color:black;text-shadow:0 0.0625em 0 white;text-decoration:none;opacity:0.2;filter:alpha(opacity=20)}.postedit-close:hover{color:black;text-decoration:none;opacity:0.4;filter:alpha(opacity=40)}
+.mw-collapsible-toggle{float:right;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}  .mw-content-ltr .mw-collapsible-toggle,.mw-content-rtl .mw-content-ltr .mw-collapsible-toggle{float:right} .mw-content-rtl .mw-collapsible-toggle,.mw-content-ltr .mw-content-rtl .mw-collapsible-toggle{float:left}.mw-customtoggle,.mw-collapsible-toggle{cursor:pointer} caption .mw-collapsible-toggle,.mw-content-ltr caption .mw-collapsible-toggle,.mw-content-rtl caption .mw-collapsible-toggle,.mw-content-rtl .mw-content-ltr caption .mw-collapsible-toggle,.mw-content-ltr .mw-content-rtl caption .mw-collapsible-toggle{float:none} li .mw-collapsible-toggle,.mw-content-ltr li .mw-collapsible-toggle,.mw-content-rtl li .mw-collapsible-toggle,.mw-content-rtl .mw-content-ltr li .mw-collapsible-toggle,.mw-content-ltr .mw-content-rtl li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:none;z-index:1099;padding:0;margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left; overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}.suggestions-result-current{background-color:#4C59A6;color:white}.suggestions-special .special-label{color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white}.highlight{font-weight:bold}
+@media screen {
+	.tochidden,.toctoggle{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}.toctoggle{font-size:94%}}
+@media print {
+	#toc.tochidden,.toctoggle{display:none}}
+#collapse-pre-one .mw-collapsible-toggle .up,#collapse-pre-one.mw-collapsed .mw-collapsible-toggle .down{display:none}#collapse-pre-one .mw-collapsible-toggle .down,#collapse-pre-one.mw-collapsed .mw-collapsible-toggle .up{display:block}</style><style>
+.ve-activated #toc,.ve-activated #siteNotice,.ve-activated .mw-indicators, .ve-active #bodyContent > :not( #siteSub ):not( #contentSub ):not( .ve-ui-mwTocWidget ),.ve-activated #t-print,.ve-activated #t-permalink,.ve-activated #p-coll-print_export,.ve-activated #t-cite,.ve-deactivating .ve-ui-surface{display:none} .ve-activating .ve-ui-surface{height:0;overflow:hidden}.ve-activated #bodyContent,.ve-activated #firstHeading{opacity:0.6;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none} .ve-activated #content{position:relative}.ve-init-mw-desktopArticleTarget-loading-overlay{position:absolute;left:0;right:0;z-index:1;margin-top:-0.5em}.ve-init-mw-desktopArticleTarget-progress{height:1em;overflow:hidden;margin:0 25%}.ve-init-mw-desktopArticleTarget-progress-bar{height:1em;width:0} .mw-editsection{white-space:nowrap; unicode-bidi:-moz-isolate;unicode-bidi:-webkit-isolate;unicode-bidi:isolate}.mw-editsection-divider{color:#555}
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{color:black;text-decoration:none}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:white}.suggestions a.mw-searchSuggest-link .special-query{ overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="./Analog ORP Meter(SKU_SEN0165) - DFRobot Electronic Product Wiki and Tutorial_ Arduino and Robot Wiki-DFRobot.com_files/load(1).php">
+<script async="" src="./Analog ORP Meter(SKU_SEN0165) - DFRobot Electronic Product Wiki and Tutorial_ Arduino and Robot Wiki-DFRobot.com_files/load(2).php"></script>
+<meta name="generator" content="MediaWiki 1.27.1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="https://www.dfrobot.com/wiki/resources/assets/wiki.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="https://www.dfrobot.com/wiki/opensearch_desc.php" title="DFRobot Electronic Product Wiki and Tutorial: Arduino and Robot Wiki-DFRobot.com (en)">
+<link rel="EditURI" type="application/rsd+xml" href="https://www.dfrobot.com/wiki/api.php?action=rsd">
+<link rel="copyright" href="https://www.gnu.org/copyleft/fdl.html">
+<link rel="alternate" type="application/atom+xml" title="DFRobot Electronic Product Wiki and Tutorial: Arduino and Robot Wiki-DFRobot.com Atom feed" href="https://www.dfrobot.com/wiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+<script src="./Analog ORP Meter(SKU_SEN0165) - DFRobot Electronic Product Wiki and Tutorial_ Arduino and Robot Wiki-DFRobot.com_files/load(3).php"></script></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Analog_ORP_Meter_SKU_SEN0165 rootpage-Analog_ORP_Meter_SKU_SEN0165 layout-navhead skin-chameleon action-view">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<!-- navigation bar -->
+				<nav class="navbar navbar-default p-navbar" role="navigation" id="mw-navigation">
+					<div class="container-fluid">
+						<div class="navbar-header">
+
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mw-navigation-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+							</button>
+
+							<!-- logo and main page link -->
+							<div id="p-logo" class="p-logo navbar-brand" role="banner">
+								<a><img src="./Analog ORP Meter(SKU_SEN0165) - DFRobot Electronic Product Wiki and Tutorial_ Arduino and Robot Wiki-DFRobot.com_files/wiki.png" alt="DFRobot Electronic Product Wiki and Tutorial: Arduino and Robot Wiki-DFRobot.com"></a>
+							</div>
+
+
+						</div>
+
+						<div class="collapse navbar-collapse" id="mw-navigation-collapse"><ul class="nav navbar-nav">
+							<!-- navigation -->
+							<!-- empty -->
+							<!-- Product Manual -->
+							<li class="dropdown">
+								<a href="https://www.dfrobot.com/wiki/index.php/Analog_ORP_Meter(SKU:SEN0165)#" class="dropdown-toggle" data-toggle="dropdown">Product Manual <b class="caret"></b></a>
+								
+								<ul class="dropdown-menu p-Product Manual" id="p-Product Manual">
+										<li id="n-DFR-Series"><a href="https://www.dfrobot.com/wiki/index.php/Product_Manual#DFR_Series">DFR Series</a></li>
+										<li id="n-SEN-Series"><a href="https://www.dfrobot.com/wiki/index.php/Product_Manual#SEN_Series">SEN Series</a></li>
+										<li id="n-DRI-Series"><a href="https://www.dfrobot.com/wiki/index.php/Product_Manual#DRI_Series">DRI Series</a></li>
+										<li id="n-TEL-Series"><a href="https://www.dfrobot.com/wiki/index.php/Product_Manual#TEL_Series">TEL Series</a></li>
+										<li id="n-FIT-Series"><a href="https://www.dfrobot.com/wiki/index.php/Product_Manual#FIT_Series">FIT Series</a></li>
+										<li id="n-ROB-Series"><a href="https://www.dfrobot.com/wiki/index.php/Product_Manual#ROB_Series">ROB Series</a></li>
+										<li id="n-SER-Series"><a href="https://www.dfrobot.com/wiki/index.php/Product_Manual#SER_Series">SER Series</a></li>
+										<li id="n-TOY-Series"><a href="https://www.dfrobot.com/wiki/index.php/Product_Manual#TOY_Series">TOY Series</a></li>
+										<li id="n-KIT-Series"><a href="https://www.dfrobot.com/wiki/index.php/Product_Manual#KIT_Series">KIT Series</a></li>
+										<li id="n-Selector-Guide"><a href="https://www.dfrobot.com/wiki/index.php/Product_Manual#Selector_Guide">Selector Guide</a></li>
+										<li id="n-Review"><a href="https://www.dfrobot.com/wiki/index.php/Review">Review</a></li>
+										<li id="n-Project"><a href="https://www.dfrobot.com/wiki/index.php/Project">Project</a></li>
+										<li id="n-Tutorial"><a href="https://www.dfrobot.com/wiki/index.php/Tutorial">Tutorial</a></li>
+										<li id="n-Assembly-Guide"><a href="https://www.dfrobot.com/wiki/index.php/Assembly_Guide">Assembly Guide</a></li>
+								</ul>
+							</li>
+							<!-- Tutorials -->
+							<li class="dropdown">
+								<a href="https://www.dfrobot.com/wiki/index.php/Analog_ORP_Meter(SKU:SEN0165)#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+								
+								<ul class="dropdown-menu p-Tutorials" id="p-Tutorials">
+										<li id="n-User-Manual"><a href="https://www.dfrobot.com/wiki/index.php/Product_Manual#User_Manual">User Manual</a></li>
+										<li id="n-help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents" rel="nofollow" title="The place to find out">Help</a></li>
+								</ul>
+							</li>
+							<!-- Menu -->
+							<li class="dropdown">
+								<a href="https://www.dfrobot.com/wiki/index.php/Analog_ORP_Meter(SKU:SEN0165)#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
+								
+								<ul class="dropdown-menu p-Menu" id="p-Menu">
+										<li id="n-HOME"><a href="https://www.dfrobot.com/">HOME</a></li>
+										<li id="n-STORE"><a href="https://www.dfrobot.com/store">STORE</a></li>
+										<li id="n-BLOG"><a href="https://www.dfrobot.com/blog">BLOG</a></li>
+										<li id="n-WIKI"><a href="https://www.dfrobot.com/wiki">WIKI</a></li>
+										<li id="n-COMMUNITY"><a href="https://www.dfrobot.com/blog">COMMUNITY</a></li>
+								</ul>
+							</li></ul>
+
+							<div class="navbar-right-aligned">
+								<!-- page tools -->
+								<ul class="navbar-tools navbar-nav">
+									<li class="navbar-tools-tools dropdown">
+										<a data-toggle="dropdown" class="dropdown-toggle" href="https://www.dfrobot.com/wiki/index.php/Analog_ORP_Meter(SKU:SEN0165)#" title="Page tools"><span>...</span></a>
+										<!-- Content navigation -->
+										<ul class="p-contentnavigation dropdown-menu" id="p-contentnavigation">
+											<!-- namespaces -->
+											<li id="ca-talk" class="new"><a href="https://www.dfrobot.com/wiki/index.php?title=Talk:Analog_ORP_Meter(SKU:SEN0165)&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page [alt-shift-t]" accesskey="t" class="new">Discussion</a></li>
+											<!-- views -->
+											<li id="ca-viewsource"><a href="https://www.dfrobot.com/wiki/index.php?title=Analog_ORP_Meter(SKU:SEN0165)&amp;action=edit" title="This page is protected.
+You can view its source [alt-shift-e]" accesskey="e">View source</a></li>
+											<li id="ca-history"><a href="https://www.dfrobot.com/wiki/index.php?title=Analog_ORP_Meter(SKU:SEN0165)&amp;action=history" title="Past revisions of this page [alt-shift-h]" accesskey="h">History</a></li>
+										</ul>
+									</li>
+								</ul>
+
+								<!-- search form -->
+								<div id="p-search" class="p-search navbar-form" role="search">
+									<form id="searchform" class="mw-search form-inline" action="https://www.dfrobot.com/wiki/index.php">
+										<input type="hidden" name="title" value="Special:Search">
+										<div class="input-group">
+											<input name="search" placeholder="Search" title="Search DFRobot Electronic Product Wiki and Tutorial: Arduino and Robot Wiki-DFRobot.com [alt-shift-f]" accesskey="f" id="searchInput" class="form-control" autocomplete="off">
+											<div class="input-group-btn">
+												<button value="Go" id="searchGoButton" name="go" title="Go to a page with this exact name if it exists" type="submit" class="searchGoButton btn btn-default"><span class="glyphicon glyphicon-share-alt"></span></button>
+												<button value="Search" id="mw-searchButton" name="fulltext" title="Search the pages for this text" type="submit" class="mw-searchButton btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+											</div>
+										</div>
+									</form>
+								</div>
+
+								<!-- personal tools -->
+								<ul class="navbar-tools navbar-nav">
+									<li class="dropdown navbar-tools-tools">
+										<a class="dropdown-toggle navbar-usernotloggedin" href="https://www.dfrobot.com/wiki/index.php/Analog_ORP_Meter(SKU:SEN0165)#" data-toggle="dropdown" title="You are not logged in."><span class="glyphicon glyphicon-user"></span></a>
+										<ul class="p-personal-tools dropdown-menu dropdown-menu-right">
+											<li id="pt-login"><a href="https://www.dfrobot.com/wiki/index.php?title=Special:UserLogin&amp;returnto=Analog+ORP+Meter%28SKU%3ASEN0165%29" title="You are encouraged to log in; however, it is not mandatory [alt-shift-o]" accesskey="o">Log in</a></li>
+										</ul>
+									</li>
+								</ul>
+
+							</div> <!-- navbar-right-aligned -->
+						</div><!-- /.navbar-collapse -->
+					</div>
+				</nav>
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<!-- start the content area -->
+				<div id="content" class="mw-body"><a id="top"></a>
+					<div id="mw-indicators" class="mw-indicators"></div>
+					<div id="mw-js-message" style="display:none;"></div>
+					<div class="contentHeader">
+						<!-- title of the page -->
+						<h1 id="firstHeading" class="firstHeading">Analog ORP Meter(SKU:SEN0165)</h1>
+						<!-- tagline; usually goes something like "From WikiName" primary purpose of this seems to be for printing to identify the source of the content -->
+						<div id="siteSub">From DFRobot Electronic Product Wiki and Tutorial: Arduino and Robot Wiki-DFRobot.com</div><div id="jump-to-nav" class="mw-jump">Jump to:<a href="https://www.dfrobot.com/wiki/index.php/Analog_ORP_Meter(SKU:SEN0165)#mw-navigation">navigation</a>, <a href="https://www.dfrobot.com/wiki/index.php/Analog_ORP_Meter(SKU:SEN0165)#p-search">search</a></div>
+					</div>
+					<div id="bodyContent">
+						<!-- body text -->
+
+						<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2><span class="toctoggle">&nbsp;[<a href="https://www.dfrobot.com/wiki/index.php/Analog_ORP_Meter(SKU:SEN0165)#" id="togglelink">hide</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="https://www.dfrobot.com/wiki/index.php/Analog_ORP_Meter(SKU:SEN0165)#Introduction"><span class="tocnumber">1</span> <span class="toctext"><b>Introduction</b></span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="https://www.dfrobot.com/wiki/index.php/Analog_ORP_Meter(SKU:SEN0165)#Applications"><span class="tocnumber">2</span> <span class="toctext"><b>Applications</b></span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="https://www.dfrobot.com/wiki/index.php/Analog_ORP_Meter(SKU:SEN0165)#Specification"><span class="tocnumber">3</span> <span class="toctext"><b>Specification</b></span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="https://www.dfrobot.com/wiki/index.php/Analog_ORP_Meter(SKU:SEN0165)#ORP_Standard_Solution_Temperature_Characteristics"><span class="tocnumber">4</span> <span class="toctext"><b>ORP Standard Solution Temperature Characteristics</b></span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="https://www.dfrobot.com/wiki/index.php/Analog_ORP_Meter(SKU:SEN0165)#Use_the_ORP_Meter"><span class="tocnumber">5</span> <span class="toctext"><b>Use the ORP Meter</b></span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="https://www.dfrobot.com/wiki/index.php/Analog_ORP_Meter(SKU:SEN0165)#Connecting_Diagram"><span class="tocnumber">5.1</span> <span class="toctext">Connecting Diagram</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="https://www.dfrobot.com/wiki/index.php/Analog_ORP_Meter(SKU:SEN0165)#Step_to_Use_the_ORP_Meter"><span class="tocnumber">5.2</span> <span class="toctext">Step to Use the ORP Meter</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="https://www.dfrobot.com/wiki/index.php/Analog_ORP_Meter(SKU:SEN0165)#Sample_Code"><span class="tocnumber">5.3</span> <span class="toctext">Sample Code</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="https://www.dfrobot.com/wiki/index.php/Analog_ORP_Meter(SKU:SEN0165)#Precautions"><span class="tocnumber">6</span> <span class="toctext"><b>Precautions</b></span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="https://www.dfrobot.com/wiki/index.php/Analog_ORP_Meter(SKU:SEN0165)#Documents"><span class="tocnumber">7</span> <span class="toctext"><b>Documents</b></span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Introduction"><b>Introduction</b></span></h2>
+<ul><li>Want to DIY an ORP meter? Need to measure the ORP value? Find it difficult to use with Arduino? Here comes an analog ORP meter,specially designed for Arduino controllers and has built-in simple, convenient and practical connection and features.When done the connection according to the diagram ,then with the program control,it's very convenient to measure the ORP.<br></li>
+<li>ORP(Oxidation-Reduction Potential)is a measure of the ability of oxidation and reduction of aqueous solution, characterization of the relative degree of oxidizing or reducing.The unit is mV. Oxidation reduction potential is high, oxidation is stronger ,while the potential is lower, oxidation is weaker. The positive potential means that solution shows a certain degree of oxidation, while the negative potential means that solution shows a certain degree of reduction.<br></li>
+<li>ORP is an important index of water quality detection, although it can not separate water quality independently, but can be combined with other water quality index to reflect the ecological environment in the aquarium system.<br></li>
+<li>The measuring element is an ORP composite electrode, made of gold or platinum electrode and the reference electrode,assembly into a composite electrode.It used to measure Oxidation-Reduction Potential of the solution.<br></li></ul>
+<h2><span class="mw-headline" id="Applications"><b>Applications</b></span></h2>
+<ul><li>Water quality testing</li>
+<li>Aquaculture</li></ul>
+<h2><span class="mw-headline" id="Specification"><b>Specification</b></span></h2>
+<ul><li>Module Power:+5.00V</li>
+<li>Module Size: 40mmX27mm</li>
+<li>Measuring Range:-2000mV—2000mV</li>
+<li>Suitable Temperature:5-70℃</li>
+<li>Accuracy:±10mv (25 ℃)</li>
+<li>Response Time:≤20sec</li>
+<li>ORP Probe with BNC Connector</li>
+<li>PH2.0 Interface(3 foot patch)</li>
+<li>Zero calibration button</li>
+<li>Power Indicator LED</li></ul>
+<h2><span class="mw-headline" id="ORP_Standard_Solution_Temperature_Characteristics"><b>ORP Standard Solution Temperature Characteristics</b></span></h2>
+<div class="floatleft"><a href="https://www.dfrobot.com/wiki/index.php/File:ORP_mV.jpg" class="image"><img alt="ORP mV.jpg" src="./Analog ORP Meter(SKU_SEN0165) - DFRobot Electronic Product Wiki and Tutorial_ Arduino and Robot Wiki-DFRobot.com_files/250px-ORP_mV.jpg" width="250" height="158" srcset="/wiki/images/thumb/7/76/ORP_mV.jpg/375px-ORP_mV.jpg 1.5x, /wiki/images/7/76/ORP_mV.jpg 2x"></a></div><br>
+<p><br><br><br><br><br><br><br><br>
+</p>
+<h2><span class="mw-headline" id="Use_the_ORP_Meter"><b>Use the ORP Meter</b></span></h2>
+<h3><span class="mw-headline" id="Connecting_Diagram">Connecting Diagram</span></h3>
+<p><a href="https://www.dfrobot.com/wiki/index.php/File:ORP_meter_2.png" class="image"><img alt="ORP meter 2.png" src="./Analog ORP Meter(SKU_SEN0165) - DFRobot Electronic Product Wiki and Tutorial_ Arduino and Robot Wiki-DFRobot.com_files/600px-ORP_meter_2.png" width="600" height="486" srcset="/wiki/images/thumb/0/07/ORP_meter_2.png/900px-ORP_meter_2.png 1.5x, /wiki/images/thumb/0/07/ORP_meter_2.png/1200px-ORP_meter_2.png 2x"></a><br>
+</p>
+<h3><span class="mw-headline" id="Step_to_Use_the_ORP_Meter">Step to Use the ORP Meter</span></h3>
+<p><b>Cautions:</b><br>
+</p>
+<ul><li> Please use an external switching power supply,and the voltage as close as possible to the +5.00V. More accurate the voltage, more higher the accuracy! <br></li>
+<li> Using the ORP electrode is without calibration, so it can be used directly. Only when you doubt the ORP electrode quality or test results , you should use the ORP standard solution to check the electrode potential to determine  the ORP electrode or instrument quality.<br></li>
+<li> Before the ORP electrode measured different solutions, we need to wash it,and deionized water is recommended.<br></li>
+<li>When the ORP probe is connected to the ORP meter board,please do not press the calibration button.Or,the ORP probe may be damaged!<br></li></ul>
+<p><br>
+<b>(1) </b>Use the analog connection lines,the ORP meter board is connected to the analog port 1 of the Arduino controller. When the Arduino controller gets power,you will see the blue LED on board is on.<br>
+<b>(2) </b>Upload the sample code to the Arduino controller.(Note: At this time,a sentence in the sample program should be "#define OFFSET 0").<br>
+<b>(3) </b>Open the serial monitor of Arduino IDE , you will see the current ORP value.Press the calibration button and keep it pressed,you will see a small ORP vlaue printed on the serial monitor.Then according to this value, modify the offset in the sample program.For example,the serial print: "ORP: 8mV", then you should modify the sentence "#define OFFSET 0" to "#define OFFSET 8" in the sample code,then recompile the code and upload. At this time,you have completed the calibration.<br>
+<b>(4) </b>According to the graphic,the ORP electrode is connected to the BNC connector on the pH meter board.. After the calibration, the ORP electrode can measure the ORP value of the solution, through the serial monitor, you can see the current ORP value of the solution conveniently.<br>
+<br>
+</p>
+<h3><span class="mw-headline" id="Sample_Code">Sample Code</span></h3>
+<p>Sample code for testing the ORP meter and get the sensor feedback from the Arduino Serial Monitor.
+</p>
+<pre style="color:blue">/*
+# This sample codes is for testing the ORP meter V1.0.
+ # Editor&nbsp;: YouYou
+ # Date  &nbsp;: 2013.11.26
+ # Product: ORP meter
+ # SKU   &nbsp;: SEN0165
+*/
+#define VOLTAGE 5.00    //system voltage
+#define OFFSET 0        //zero drift voltage
+#define LED 13         //operating instructions
+
+double orpValue;
+
+#define ArrayLenth  40    //times of collection
+#define orpPin 1          //orp meter output,connect to Arduino controller ADC pin
+
+int orpArray[ArrayLenth];
+int orpArrayIndex=0;
+
+double avergearray(int* arr, int number){
+  int i;
+  int max,min;
+  double avg;
+  long amount=0;
+  if(number&lt;=0){
+    printf("Error number for the array to avraging!/n");
+    return 0;
+  }
+  if(number&lt;5){   //less than 5, calculated directly statistics
+    for(i=0;i&lt;number;i++){
+      amount+=arr[i];
+    }
+    avg = amount/number;
+    return avg;
+  }else{
+    if(arr[0]&lt;arr[1]){
+      min = arr[0];max=arr[1];
+    }
+    else{
+      min=arr[1];max=arr[0];
+    }
+    for(i=2;i&lt;number;i++){
+      if(arr[i]&lt;min){
+        amount+=min;        //arr&lt;min
+        min=arr[i];
+      }else {
+        if(arr[i]&gt;max){
+          amount+=max;    //arr&gt;max
+          max=arr[i];
+        }else{
+          amount+=arr[i]; //min&lt;=arr&lt;=max
+        }
+      }//if
+    }//for
+    avg = (double)amount/(number-2);
+  }//if
+  return avg;
+}
+
+
+void setup(void) {
+  Serial.begin(9600);
+  pinMode(LED,OUTPUT);
+}
+
+void loop(void) {
+  static unsigned long orpTimer=millis();   //analog sampling interval
+  static unsigned long printTime=millis();
+  if(millis() &gt;= orpTimer)
+  {
+    orpTimer=millis()+20;
+    orpArray[orpArrayIndex++]=analogRead(orpPin);    //read an analog value every 20ms
+    if (orpArrayIndex==ArrayLenth) {
+      orpArrayIndex=0;
+    }   
+    orpValue=((30*(double)VOLTAGE*1000)-(75*avergearray(orpArray, ArrayLenth)*VOLTAGE*1000/1024))/75-OFFSET;  
+
+    //convert the analog value to orp according the circuit
+  }
+  if(millis() &gt;= printTime)   //Every 800 milliseconds, print a numerical, convert the state of the LED indicator
+  {
+	printTime=millis()+800;
+	Serial.print("ORP: ");
+	Serial.print((int)orpValue);
+        Serial.println("mV");
+        digitalWrite(LED,1-digitalRead(LED));
+  }
+}
+</pre>
+<p><br>
+</p>
+<h2><span class="mw-headline" id="Precautions"><b>Precautions</b></span></h2>
+<ul><li>Before and after measurement, it is necessary to use deionized water to wash the electrode, in order to ensure the measurement precision. When measured in thick samples, you should wash the electrode with hot deionized water repeatedly rinsed several times, to remove sticky in the platinum sheet specimen.<br></li>
+<li>It will occur the passivation when the electrode has been used for a long time.The phenomenon is sensitive gradient decreasing, slow response, reading data is not accurate. At this time,you should immerse the bottom electrode platinum sheet into 0.1M hydrochloric acid for 24 hours.<br></li>
+<li>Electrode pollution or the liquid junction jam also can make the electrode passivation. At this time,you  should select the appropriate cleaning solution based on the nature of the pollutant.<br></li>
+<li>The electrode using cycle is about one year. After aging, it should be replaced with a new electrode in a timely manner.<br></li></ul>
+<h2><span class="mw-headline" id="Documents"><b>Documents</b></span></h2>
+<ul><li><a class="external text" href="http://www.dfrobot.com/image/data/SEN0165/OPR%20meter%20V1.0%20Schematic.pdf">Schematic</a><br></li>
+<li><a class="external text" href="http://www.dfrobot.com/image/data/SEN0165/OPR%20meter%20V1.0%20layout.pdf">PCB layout</a><br></li>
+<li><a class="external text" href="http://www.dfrobot.com/image/data/SEN0165/ORP%20Composite%20Electrode%20Manual.pdf">ORP Composite Electrode Manual</a><br></li>
+<li><a class="external text" href="http://www.dfrobot.com/image/data/SEN0165/ORPSensorSample.zip">Arduino sample code</a><br></li></ul>
+<p><br><br>
+<a href="https://www.dfrobot.com/wiki/index.php/File:Nextredirectltr.png" class="image"><img alt="Nextredirectltr.png" src="./Analog ORP Meter(SKU_SEN0165) - DFRobot Electronic Product Wiki and Tutorial_ Arduino and Robot Wiki-DFRobot.com_files/Nextredirectltr.png" width="42" height="20"></a>Go Shopping <a class="external text" href="https://www.dfrobot.com/product-1071.html"><u>Gravity: Analog ORP Sensor Meter For Arduino</u></a>
+<br><br>
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20170919201621
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.010 seconds
+Real time usage: 0.012 seconds
+Preprocessor visited node count: 47/1000000
+Preprocessor generated node count: 64/1000000
+Post‐expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 - -total
+-->
+
+<!-- Saved in parser cache with key df_wikiv3-wk:pcache:idhash:1927-0!*!*!!en!5!* and timestamp 20170919201621 and revision id 37932
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://www.dfrobot.com/wiki/index.php?title=Analog_ORP_Meter(SKU:SEN0165)&amp;oldid=37932">https://www.dfrobot.com/wiki/index.php?title=Analog_ORP_Meter(SKU:SEN0165)&amp;oldid=37932</a>"</div>
+
+						<!-- end body text -->
+					</div>
+					<!-- category links -->
+					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<!-- Tools-->
+				<nav class="navbar navbar-default p-tb " id="p-tb">
+					<ul class="nav navbar-nav small">
+						<li id="t-whatlinkshere"><a href="https://www.dfrobot.com/wiki/index.php/Special:WhatLinksHere/Analog_ORP_Meter(SKU:SEN0165)" title="A list of all wiki pages that link here [alt-shift-j]" accesskey="j">What links here</a></li>
+						<li id="t-recentchangeslinked"><a href="https://www.dfrobot.com/wiki/index.php/Special:RecentChangesLinked/Analog_ORP_Meter(SKU:SEN0165)" title="Recent changes in pages linked from this page [alt-shift-k]" accesskey="k">Related changes</a></li>
+						<li id="t-specialpages"><a href="https://www.dfrobot.com/wiki/index.php/Special:SpecialPages" title="A list of all special pages [alt-shift-q]" accesskey="q">Special pages</a></li>
+						<li id="t-print"><a href="https://www.dfrobot.com/wiki/index.php?title=Analog_ORP_Meter(SKU:SEN0165)&amp;printable=yes" rel="alternate" title="Printable version of this page [alt-shift-p]" accesskey="p">Printable version</a></li>
+						<li id="t-permalink"><a href="https://www.dfrobot.com/wiki/index.php?title=Analog_ORP_Meter(SKU:SEN0165)&amp;oldid=37932" title="Permanent link to this revision of the page">Permanent link</a></li>
+						<li id="t-info"><a href="https://www.dfrobot.com/wiki/index.php?title=Analog_ORP_Meter(SKU:SEN0165)&amp;action=info" title="More information about this page">Page information</a></li>
+						
+					</ul>
+				</nav>
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<!-- footer links -->
+				<ul class="footer-info list-unstyled small" id="footer-info">
+					<!-- info -->
+					<li> This page was last modified on 16 May 2017, at 07:57.</li>
+					<li>Content is available under <a class="external" rel="nofollow" href="https://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.3 or later</a> unless otherwise noted.</li>
+				</ul>
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6">
+				<!-- places -->
+				<ul class="list-inline footer-places " id="footer-places">
+					<li><small><a href="https://www.dfrobot.com/wiki/index.php/Robot_Wiki:Privacy_policy" title="Robot Wiki:Privacy policy">Privacy policy</a></small></li>
+					<li><small><a href="https://www.dfrobot.com/wiki/index.php/Robot_Wiki:About" title="Robot Wiki:About">About DFRobot Electronic Product Wiki and Tutorial: Arduino and Robot Wiki-DFRobot.com</a></small></li>
+					<li><small><a href="https://www.dfrobot.com/wiki/index.php/Robot_Wiki:General_disclaimer" title="Robot Wiki:General disclaimer">Disclaimers</a></small></li>
+				</ul>
+
+			</div>
+			<div class="col-lg-6">
+				<!-- footer icons -->
+				<ul class="list-inline pull-right footer-icons " id="footer-icons">
+					<!-- copyright -->
+					<li><a href="https://www.gnu.org/copyleft/fdl.html"><img src="./Analog ORP Meter(SKU_SEN0165) - DFRobot Electronic Product Wiki and Tutorial_ Arduino and Robot Wiki-DFRobot.com_files/gnu-fdl.png" alt="GNU Free Documentation License 1.3 or later" width="88" height="31"></a></li>
+					<!-- poweredby -->
+					<li><a href="https://www.mediawiki.org/"><img src="./Analog ORP Meter(SKU_SEN0165) - DFRobot Electronic Product Wiki and Tutorial_ Arduino and Robot Wiki-DFRobot.com_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31"></a></li>
+				</ul>
+
+			</div>
+		</div>
+	</div><script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.visualEditor.targetLoader","ext.bootstrap.scripts"]);});</script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-16770142-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript" src="https://analytics.example.com/tracking.js"></script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":29});});</script>
+<a accesskey="v" href="https://www.dfrobot.com/wiki/index.php/Analog_ORP_Meter(SKU:SEN0165)?veaction=edit" style="display: none;"></a><div class="suggestions" style="display: none; font-size: 14px;"><div class="suggestions-results"></div><div class="suggestions-special"></div></div></body></html>

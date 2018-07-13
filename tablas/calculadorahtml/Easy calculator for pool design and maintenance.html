@@ -1,0 +1,951 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0040)http://www.easy-pool.es/calculator.html# -->
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="generator" content="HTML Tidy for Linux (vers 6 November 2007), see www.w3.org">
+
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-language" content="es">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="copyright" content="2012, 2013, HidroMaster, hablemosdepiscinas.com, easy-pool.es">
+<meta name="keywords" content="calculator, pool, spa, chemical, construction, filter, pump, hablemosdepiscinas.com">
+<meta name="description" content="A user-friendly online calculator for pool design, care and maintenance">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
+<meta name="identifier-url" content="http://www.easy-pool.es">
+<meta name="og:url" content="http://www.easy-pool.es">
+<meta content="easy pool management">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="pragma" content="no-cache">
+<title>Easy calculator for pool design and maintenance</title>
+
+<!--tab-->
+<link rel="stylesheet" href="./Easy calculator for pool design and maintenance_files/jquery-ui.css" type="text/css">
+<link rel="stylesheet" href="./Easy calculator for pool design and maintenance_files/comun.css" type="text/css">
+
+<script src="./Easy calculator for pool design and maintenance_files/ca-pub-1338539579977515.js.descarga"></script><script src="./Easy calculator for pool design and maintenance_files/jquery-1.8.2.js.descarga">
+</script> 
+<script src="./Easy calculator for pool design and maintenance_files/jquery-ui.js.descarga">
+</script> 
+<script src="./Easy calculator for pool design and maintenance_files/jcomun.js.descarga">
+</script>
+<script src="./Easy calculator for pool design and maintenance_files/jquery.ui.touch-punch.min.js.descarga">
+</script> 
+
+</head>
+
+<body class="cuerpo">
+<script type="text/javascript">
+varCargando = 1;
+</script>
+     <div class="contenedor_margen">
+         <div class="contenedor letras1">
+			 <div class="header">
+                  <div class="mifondo">
+				     <p style="position:relative; margin-left:90%;margin-top:6%;">
+					 <a href="http://www.easy-pool.es/calculator.html#" id="v-ingles"><img src="./Easy calculator for pool design and maintenance_files/id-ingles.jpg"></a>
+                     <a href="http://www.easy-pool.es/calculator.html#" id="v-espanol"><img src="./Easy calculator for pool design and maintenance_files/id-espa.jpg"></a></p>
+				  
+				  </div>
+				  <div class="separador-5">
+				  </div>
+				  <!--<div class="nav-menu letras-nav ">
+                         <ul>
+                           <li class="esquinaIzq fondo-no-sel"><a href="#">HOME</a></li>
+                           <li class="fondo-no-sel"><a href="#">>PORTAL</a></li>
+                           <li class="fondo-no-sel"><a href="#">>FORUM</a></li>
+						   <li class="esquinaDer fondo-no-sel"><a style="width:663px" href="#"></a></li>
+                         </ul>
+                   </div>-->           
+			 </div>
+			 <div class="col-izq an207"><!--col-izq-->
+
+<div class="semi-barrita fondo-sel"><label id="miPiscina" class="0es ng">MI PISCINA</label>
+</div>
+<div class="borde-mipiscina">
+     <div class="inputArea-estrecha fondo-no-sel">
+         <label class="1es ng">Volumen agua</label>
+	     <input class="input_ctl ctlAb an50" id="entr_volumen" type="text" onkeypress="return numbersonly(event, false)" <="" input="">&nbsp;
+		 <font class="2es">litros</font>
+     </div>
+     <div class="inputArea-estrecha fondo-no-sel">
+        <label class="3es ng">Temperatura agua</label>
+		<select class="input_ctl ctlAb ctr-sel an65" id="entr_temp" onchange="Calcular_T ();"><option value="5">5 C</option><option value="6">6 C</option><option value="7">7 C</option><option value="8">8 C</option><option value="9">9 C</option><option value="10">10 C</option><option value="11">11 C</option><option value="12">12 C</option><option value="13">13 C</option><option value="14">14 C</option><option value="15">15 C</option><option value="16">16 C</option><option value="17">17 C</option><option value="18">18 C</option><option value="19">19 C</option><option value="20">20 C</option><option value="21">21 C</option><option value="22">22 C</option><option value="23">23 C</option><option value="24">24 C</option><option value="25">25 C</option><option value="26">26 C</option><option value="27">27 C</option><option value="28">28 C</option><option value="29">29 C</option><option value="30">30 C</option><option value="31">31 C</option><option value="32">32 C</option><option value="33">33 C</option><option value="34">34 C</option><option value="35">35 C</option><option value="36">36 C</option><option value="37">37 C</option><option value="38">38 C</option><option value="39">39 C</option><option value="40">40 C</option><option value="41">41 C</option><option value="42">42 C</option><option value="43">43 C</option><option value="44">44 C</option><option value="45">45 C</option><option value="46">46 C</option><option value="47">47 C</option><option value="48">48 C</option><option value="49">49 C</option><option value="50">50 C</option></select>
+     </div>
+     
+	 <div class="inputArea-estrecha fondo-no-sel">
+         <a href="http://www.easy-pool.es/calculator.html#"><div class="interrog posIntrrogB" id="lblm-ayudaTDS"></div></a>							  
+         <label class="4es ng">Total Sólidos Disueltos (TDS)</label><p>&nbsp;</p>
+		 <p><font class="5es">TDS conocido</font>&nbsp;&nbsp;&nbsp;&nbsp;<input class="input_ctl ctlB an45" id="entr_tds" type="text" onkeypress="return numbersonly(event, false)" <="" input="">&nbsp;ppm</p><p>
+		 </p><p><font class="6es">Antigüedad agua</font>&nbsp;&nbsp;<select id="entr_tds_anos" class="input_ctl ctlB ctr-sel an45"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option></select>
+		 &nbsp;<font class="7en">years</font></p><p>
+		 </p><p><font class="8en">Estimated TDS</font>&nbsp;&nbsp;&nbsp;&nbsp;<input class="input_ctl ctlB an40" type="text" id="entr_tds_estimado" disabled="disabled">&nbsp;ppm</p><p>
+     </p></div>
+     
+	 <div id="ayudaTDS" class="ocultar">  
+             <p class="fondo-no-sel franja-ayuda"><font class="">TDS HELP</font>
+			 <label class="ayuda" id="lblo-ayudaTDS"><a href="http://www.easy-pool.es/calculator.html#"><font class="">Hide</font></a></label></p>
+			 <div id="ayudaTDS-aux" class="inputArea-estrecha fondo-no-sel gs"><p class="pbs"><b>1.</b> Si ha medido o conoce el TDS, introducir su valor en el campo <b class="oliva">TDS conocido</b></p><p class="pea">&nbsp;</p>	  
+<p class="pbs"><b>2.</b> Si no, la calculadora lo estima por la edad del agua. Introduzca "0" en campo <b class="oliva">TDS conocido</b>
+y despues introduzca edad del agua en campo <b class="oliva">Antiguedad agua</b></p><p>&nbsp;</p>
+<p class="pbm">El TDS afecta al ISL, pero solo en caso de <i>cloración salina</i> o <i>agua muy vieja</i> tiene que preocuparse y medir el TDS.
+Si no es su caso, ponga "0" en <i>TDS conocido</i> e introduzca sólo los años del agua en la piscina y no se preocupe.</p>
+</div>  
+     </div>
+
+     <div class="inputArea-estrecha fondo-no-sel">
+	      <a href="http://www.easy-pool.es/calculator.html#"><div class="interrog posIntrrogB" id="lblm-ayudaACN"></div></a>							  
+         <label class="9en ng">Cyanuric Acid (CYA)</label>
+		 <p><select id="entr_cianurico" class="input_ctl ctlAb ctr-sel an55"><option>0</option><option>2</option><option>4</option><option>6</option><option>8</option><option>10</option><option>12</option><option>14</option><option>16</option><option>18</option><option>20</option><option>22</option><option>24</option><option>26</option><option>28</option><option>30</option><option>32</option><option>34</option><option>36</option><option>38</option><option>40</option><option>42</option><option>44</option><option>46</option><option>48</option><option>50</option><option>52</option><option>56</option><option>60</option><option>64</option><option>68</option><option>72</option><option>76</option><option>80</option><option>84</option><option>88</option><option>92</option><option>96</option><option>100</option><option>105</option><option>110</option><option>115</option><option>120</option><option>125</option><option>130</option><option>135</option><option>140</option><option>145</option><option>150</option><option>160</option><option>170</option><option>180</option><option>190</option><option>200</option></select>&nbsp;ppm</p>
+     </div>				 
+	 <div id="ayudaACN" class="ocultar">  
+             <p class="fondo-no-sel franja-ayuda"><font class="">CYA HELP</font>
+			 <label class="ayuda" id="lblo-ayudaACN"><a href="http://www.easy-pool.es/calculator.html#"><font class="28en">Hide</font></a></label></p>
+			 <div id="ayudaACN-aux" class="inputArea-estrecha fondo-no-sel gs">				 <p class="pbs">1. Si utiliza dicloro, tricloro u otro tipo de cloro y añade estabilizador para protegerlo contra la degradación solar, mída el <i>acido cianurico</i> (ACN) e introduzca 
+                 su valor en el campo <b class="oliva">Acido cianúrico</b></p><p class="pea">&nbsp;</p>	  
+		         <p class="pbs">2. Si no es asi introduzca <b>'0'</b>  en ese campo.</p><p>&nbsp;</p>
+                 <p class="pbm">El acido cianurico (ACN) es un componente que contribuye a la <i>Alcalinidad total (AT)</i>, pero no al <i>IS de Langelier (ISL)</i></p><p>&nbsp;</p>
+                 <p class="pbm">Si tiene un valor distinto de '0', la calculadora lo descuenta de la AT para determinar la <i>Alcalinidad Carbonatada (AC)</i> que es la que afecta al ISL. 
+				 En cualquier momento puede Ud. consultar el valor de la AC, simplemente pulsando pulsando <b class="oliva">Mostrar Alc. Carbonatada</b> en el panel de AT</p><p>&nbsp;</p>
+                 
+ </div>  
+     </div>
+
+     <div class="inputArea-estrecha fondo-no-sel" style="padding-bottom:12px;">
+         <a href="http://www.easy-pool.es/calculator.html#"><div class="interrog posIntrrogB" id="lblm-ayudaLSI"></div></a>
+	     <label class="10en ng">Langelier Sat. Index (LSI)</label>
+	     <p>&nbsp;</p><input type="text" id="entr_LSI" class="ctl-gig" disabled="disabled">
+         <p class="peb">&nbsp;</p>
+       
+     <div class="ui-caja">
+         <div id="sliderLSI" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="width:170px">
+           <a style="left: 43.5%;" class="ui-slider-handle ui-state-default ui-corner-all" href="http://www.easy-pool.es/calculator.html#"></a>
+	     </div>
+	 </div><p>&nbsp;</p>	 
+
+	 <span id="t-LSIen" class="alarmaLSI color3 ocultar"><b>LSI OK</b><p>Balanced water</p></span>
+     <span id="t-LSIes" class="alarmaLSI color3"><b>ISL correcto</b><p>Agua equilibrada</p></span>
+	</div>
+	<div id="ayudaLSI" class="ocultar">
+             <p class="fondo-no-sel franja-ayuda"><font class="">LSI HELP</font>
+			 <label class="ayuda" id="lblo-ayudaLSI"><a href="http://www.easy-pool.es/calculator.html#"><font class="28en">Hide</font></a></label></p>
+			 <div id="ayudaACN-aux" class="inputArea-estrecha fondo-no-sel gs">
+				 <p class="pbs">Sorry, in preparation
+			</p></div>  
+     </div>
+
+	 <div id="areaLSIcomp">  
+             <p class="fondo-no-sel franja-ayuda"><font class="87en color3"><b>LSI components</b></font>
+			 <label class="ayuda"><a href="http://www.easy-pool.es/calculator.html#" id="lblm-LSIcomp"><font class="39en">Show</font></a><a href="http://www.easy-pool.es/calculator.html#" id="lblo-LSIcomp" class="ocultar"><font class="28en">Hide</font></a></label></p>
+			 <div id="areaLSIcomp-aux" class="inputArea-estrecha fondo-no-sel ocultar">
+	             <input class="input_ctl ctlE an45" id="temperatura" type="text" <="" input="">&nbsp;<font class="59en">Temperature</font><p class="pea">&nbsp;</p>
+	             <input class="input_ctl ctlE an45" id="alcalinidad" type="text" <="" input="">&nbsp;<font class="27en">Carbonate Alkalinity</font><p class="pea">&nbsp;</p>
+	             <input class="input_ctl ctlE an45" id="dureza" type="text" <="" input="">&nbsp;<font class="58en">Calcium hardness</font><p class="pea"></p>
+	             <input class="input_ctl ctlE an45" id="tedeese" type="text" <="" input="">&nbsp;TDS<p class="pea"></p>
+			</div>  
+</div>
+<p id="p1" class="ocultar"><font class="6es">Antigüedad agua</font></p>
+
+</div>
+
+			 </div><!--col-izq1-->
+
+			 <div class="col-izq a750">
+
+<ol class="toc">
+    <li><a href="http://www.easy-pool.es/calculator.html#water-balance" name="tab1" class="tab active" id="tab11" style="width:137px"><font class="32en">WATER BALANCE</font></a></li>
+    <li><a href="http://www.easy-pool.es/calculator.html#chlorine" name="tab2" class="tab" id="tab12" style="width:68px"><font class="40en">CHLORINE</font></a></li>
+    <li><a href="http://www.easy-pool.es/calculator.html#bromine" name="tab3" class="tab" id="tab13" style="width:68px"><font class="60en">BROMINE</font></a></li>
+    <li><a href="http://www.easy-pool.es/calculator.html#pump-filter" name="tab4" class="tab" id="tab14" style="width:100px"><font class="71en">FILTER SYSTEM</font></a></li>    
+    <li><a href="http://www.easy-pool.es/calculator.html#piping" name="tab5" class="tab" id="tab15" style="width:180px; "><font class="90en">POOL PIPING</font></a></li>    
+
+</ol>
+
+<div class="content" id="tab1" style="display: block;">
+     <div class="envolvente-ctl">
+ 
+         <h3 class="fondo-no-sel">&nbsp;&nbsp;&nbsp;<font class="33en">ADJUSTING <b>pH</b> LEVEL</font><a href="http://www.easy-pool.es/calculator.html#"><div class="interrog posIntrrogA" id="lblm-ayudaPH"></div></a></h3>
+         <div class="inputArea-ancha fondo-no-sel">
+
+	         <div class="subarea-estrecha">	
+		             <label class="11en ng">Current pH</label>
+			         <select id="entr_InicioPH" class="input_ctl ctlA ctr-sel an50">
+                     <option value="6.5">6.5</option><option value="6.6">6.6</option><option value="6.7">6.7</option><option value="6.8">6.8</option><option value="6.9">6.9</option><option value="7">7</option><option value="7.1">7.1</option><option value="7.2">7.2</option><option value="7.3">7.3</option><option value="7.4">7.4</option><option value="7.5">7.5</option><option value="7.6">7.6</option><option value="7.7">7.7</option><option value="7.8">7.8</option><option value="7.9">7.9</option><option value="8">8</option><option value="8.1">8.1</option><option value="8.2">8.2</option><option value="8.3">8.3</option><option value="8.4">8.4</option><option value="8.5">8.5</option></select>
+			
+                 <div>
+				 </div>
+			 
+			         <select id="entr_FinalPHaux" class="input_ctl ctlA ctr-sel an50 ocultar" <option="">7.2<option value="6.5">6.5</option><option value="6.51">6.51</option><option value="6.52">6.52</option><option value="6.53">6.53</option><option value="6.54">6.54</option><option value="6.55">6.55</option><option value="6.56">6.56</option><option value="6.57">6.57</option><option value="6.58">6.58</option><option value="6.59">6.59</option><option value="6.6">6.6</option><option value="6.61">6.61</option><option value="6.62">6.62</option><option value="6.63">6.63</option><option value="6.64">6.64</option><option value="6.65">6.65</option><option value="6.66">6.66</option><option value="6.67">6.67</option><option value="6.68">6.68</option><option value="6.69">6.69</option><option value="6.7">6.7</option><option value="6.71">6.71</option><option value="6.72">6.72</option><option value="6.73">6.73</option><option value="6.74">6.74</option><option value="6.75">6.75</option><option value="6.76">6.76</option><option value="6.77">6.77</option><option value="6.78">6.78</option><option value="6.79">6.79</option><option value="6.8">6.8</option><option value="6.81">6.81</option><option value="6.82">6.82</option><option value="6.83">6.83</option><option value="6.84">6.84</option><option value="6.85">6.85</option><option value="6.86">6.86</option><option value="6.87">6.87</option><option value="6.88">6.88</option><option value="6.89">6.89</option><option value="6.9">6.9</option><option value="6.91">6.91</option><option value="6.92">6.92</option><option value="6.93">6.93</option><option value="6.94">6.94</option><option value="6.95">6.95</option><option value="6.96">6.96</option><option value="6.97">6.97</option><option value="6.98">6.98</option><option value="6.99">6.99</option><option value="7">7</option><option value="7.01">7.01</option><option value="7.02">7.02</option><option value="7.03">7.03</option><option value="7.04">7.04</option><option value="7.05">7.05</option><option value="7.06">7.06</option><option value="7.07">7.07</option><option value="7.08">7.08</option><option value="7.09">7.09</option><option value="7.1">7.1</option><option value="7.11">7.11</option><option value="7.12">7.12</option><option value="7.13">7.13</option><option value="7.14">7.14</option><option value="7.15">7.15</option><option value="7.16">7.16</option><option value="7.17">7.17</option><option value="7.18">7.18</option><option value="7.19">7.19</option><option value="7.2">7.2</option><option value="7.21">7.21</option><option value="7.22">7.22</option><option value="7.23">7.23</option><option value="7.24">7.24</option><option value="7.25">7.25</option><option value="7.26">7.26</option><option value="7.27">7.27</option><option value="7.28">7.28</option><option value="7.29">7.29</option><option value="7.3">7.3</option><option value="7.31">7.31</option><option value="7.32">7.32</option><option value="7.33">7.33</option><option value="7.34">7.34</option><option value="7.35">7.35</option><option value="7.36">7.36</option><option value="7.37">7.37</option><option value="7.38">7.38</option><option value="7.39">7.39</option><option value="7.4">7.4</option><option value="7.41">7.41</option><option value="7.42">7.42</option><option value="7.43">7.43</option><option value="7.44">7.44</option><option value="7.45">7.45</option><option value="7.46">7.46</option><option value="7.47">7.47</option><option value="7.48">7.48</option><option value="7.49">7.49</option><option value="7.5">7.5</option><option value="7.51">7.51</option><option value="7.52">7.52</option><option value="7.53">7.53</option><option value="7.54">7.54</option><option value="7.55">7.55</option><option value="7.56">7.56</option><option value="7.57">7.57</option><option value="7.58">7.58</option><option value="7.59">7.59</option><option value="7.6">7.6</option><option value="7.61">7.61</option><option value="7.62">7.62</option><option value="7.63">7.63</option><option value="7.64">7.64</option><option value="7.65">7.65</option><option value="7.66">7.66</option><option value="7.67">7.67</option><option value="7.68">7.68</option><option value="7.69">7.69</option><option value="7.7">7.7</option><option value="7.71">7.71</option><option value="7.72">7.72</option><option value="7.73">7.73</option><option value="7.74">7.74</option><option value="7.75">7.75</option><option value="7.76">7.76</option><option value="7.77">7.77</option><option value="7.78">7.78</option><option value="7.79">7.79</option><option value="7.8">7.8</option><option value="7.81">7.81</option><option value="7.82">7.82</option><option value="7.83">7.83</option><option value="7.84">7.84</option><option value="7.85">7.85</option><option value="7.86">7.86</option><option value="7.87">7.87</option><option value="7.88">7.88</option><option value="7.89">7.89</option><option value="7.9">7.9</option><option value="7.91">7.91</option><option value="7.92">7.92</option><option value="7.93">7.93</option><option value="7.94">7.94</option><option value="7.95">7.95</option><option value="7.96">7.96</option><option value="7.97">7.97</option><option value="7.98">7.98</option><option value="7.99">7.99</option><option value="8">8</option><option value="8.01">8.01</option><option value="8.02">8.02</option><option value="8.03">8.03</option><option value="8.04">8.04</option><option value="8.05">8.05</option><option value="8.06">8.06</option><option value="8.07">8.07</option><option value="8.08">8.08</option><option value="8.09">8.09</option><option value="8.1">8.1</option><option value="8.11">8.11</option><option value="8.12">8.12</option><option value="8.13">8.13</option><option value="8.14">8.14</option><option value="8.15">8.15</option><option value="8.16">8.16</option><option value="8.17">8.17</option><option value="8.18">8.18</option><option value="8.19">8.19</option><option value="8.2">8.2</option><option value="8.21">8.21</option><option value="8.22">8.22</option><option value="8.23">8.23</option><option value="8.24">8.24</option><option value="8.25">8.25</option><option value="8.26">8.26</option><option value="8.27">8.27</option><option value="8.28">8.28</option><option value="8.29">8.29</option><option value="8.3">8.3</option><option value="8.31">8.31</option><option value="8.32">8.32</option><option value="8.33">8.33</option><option value="8.34">8.34</option><option value="8.35">8.35</option><option value="8.36">8.36</option><option value="8.37">8.37</option><option value="8.38">8.38</option><option value="8.39">8.39</option><option value="8.4">8.4</option><option value="8.41">8.41</option><option value="8.42">8.42</option><option value="8.43">8.43</option><option value="8.44">8.44</option><option value="8.45">8.45</option><option value="8.46">8.46</option><option value="8.47">8.47</option><option value="8.48">8.48</option><option value="8.49">8.49</option><option value="8.5">8.5</option></select><br><br>
+		             <img id="imgPH" class="flota-der" alt="" height="60" src="http://www.easy-pool.es/portada_bis/cs-hdp/imageset/pH.png">
+			         <input class="input_ctl an40 ocultar" id="CLactivado" type="text" disabled="disabled">
+		     </div>
+				
+	         <div class="subarea-ancha padd-6 rounded">													 
+
+			         <label class="12en ng oliva">pH target</label>
+
+			         <p><select id="entr_FinalPH" class="input_ctl ctlB ctr-sel an50"><option value="6.5">6.5</option><option value="6.6">6.6</option><option value="6.7">6.7</option><option value="6.8">6.8</option><option value="6.9">6.9</option><option value="7">7</option><option value="7.1">7.1</option><option value="7.2">7.2</option><option value="7.3">7.3</option><option value="7.4">7.4</option><option value="7.5">7.5</option><option value="7.6">7.6</option><option value="7.7">7.7</option><option value="7.8">7.8</option><option value="7.9">7.9</option><option value="8">8</option><option value="8.1">8.1</option><option value="8.2">8.2</option><option value="8.3">8.3</option><option value="8.4">8.4</option><option value="8.5">8.5</option></select>&nbsp;</p>
+
+			     <div class="img-escala fdo-escPH">
+                     <div id="sliderPH" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="width:21.5em">
+                        <a style="left: 35%;" class="ui-slider-handle ui-state-default ui-corner-all" href="http://www.easy-pool.es/calculator.html#"></a>
+	                 </div>
+	             </div>	 
+			 
+                 <div style="margin-left:340px;margin-top:-30px"><font class="20T en">Muriatic acid concentration</font><p>
+			         <input type="radio" id="check_pc" onclick="check11 ()" <="" input=""><label>&nbsp;%</label>
+			         <input type="radio" id="check_be" onclick="check22 ()" <="" input=""><label>&nbsp;ºBaume</label></p>
+			     </div> 
+
+                     <p class="pbs">&nbsp;</p>
+				     <span id="minPH">
+				     <img src="./Easy calculator for pool design and maintenance_files/icon_bajar.gif">&nbsp;<font class="25en">Add</font>&nbsp;
+				     <input class="input_ctl an35" id="entr_salfuman" name="entr_salfuman" type="text" disabled="disabled">&nbsp;<b>ml</b>&nbsp;<font class="26en">of</font>&nbsp;<b class="17en">muriatic acid</b>&nbsp;
+				     <select id="perc_salfuman" class="input_ctl ctr-sel a63 "><option value="10">10 %</option><option value="11">11 %</option><option value="12">12 %</option><option value="13">13 %</option><option value="14">14 %</option><option value="15">15 %</option><option value="16">16 %</option><option value="17">17 %</option><option value="18">18 %</option><option value="19">19 %</option><option value="20">20 %</option><option value="21">21 %</option><option value="22">22 %</option><option value="23">23 %</option><option value="24">24 %</option><option value="25">25 %</option><option value="26">26 %</option><option value="27">27 %</option><option value="28">28 %</option><option value="29">29 %</option><option value="30">30 %</option><option value="31">31 %</option><option value="32">32 %</option><option value="33">33 %</option><option value="34">34 %</option><option value="35">35 %</option><option value="36">36 %</option><option value="37">37 %</option><option value="38">38 %</option><option value="39">39 %</option><option value="40">40 %</option></select>&nbsp;or&nbsp;
+				     <input type="text" id="entr_bisulf" class="input_ctl ctlD an35" disabled="disabled">&nbsp;<b>gr</b>&nbsp;<font class="26en">of</font>&nbsp;<font class="18en"><b>dry acid</b> (sod. bisulfate)</font>
+			         </span>
+			         <p class="pea">&nbsp;</p>
+				     <span id="incPH">
+			         <img src="./Easy calculator for pool design and maintenance_files/icon_subir.gif">&nbsp;<font class="25en">Add</font>&nbsp;
+				      <input class="input_ctl an35" id="entr_carb_sod" type="text" disabled="disabled">&nbsp;<b>gr</b> &nbsp;<font class="26en">of</font>&nbsp;<font class="19en"><b>washing soda</b> (sodium carbonate)</font>
+				     <!--&nbsp;or&nbsp;<input type="text" id="entr_sosa" class="input_ctl an35" disabled="disabled"/>&nbsp;<b>gr</b> <font class="26en">of</font> <b>sosa caústica</b>-->
+				     </span>
+				     <p>&nbsp;</p>
+             </div>
+         </div>
+	     <div id="ayudaPH" class="inputArea-ancha ocultar">  
+
+				 <h4 class="fondo-no-sel" style="width:100%">&nbsp;&nbsp;&nbsp;<font class="34en">ADJUSTING pH -- HELP</font>
+                 <label class="ayuda flota-der" id="lblo-ayudaPH"><a href="http://www.easy-pool.es/calculator.html#"><font class="28en">Hide</font>&nbsp;&nbsp;&nbsp;</a></label></h4>
+
+		     <div id="ayudaPH-aux" class="subarea-ayuda gs">		         <p class="pbs"><b>1.</b> No olvidar cumplimentar el campo <b class="oliva">'Volumen agua'</b> en <b class="oliva">'Mi Piscina'</b></p><p class="pea">&nbsp;</p>
+                 <p class="pbs"><b>2.</b> Introduce el valor medido o conocido del pH en el campo desplegable <b class="oliva">'pH actual'</b></p><p class="pea">&nbsp;</p>
+                 <p class="pbs"><b>3.</b> Si usas <i>salfuman</i> como minorador de pH, introduce su graduación. Lee en BAJAR EL pH como hacerlo</p><p class="pea">&nbsp;</p>
+		         <p class="pbs"><b>4.</b> Introduce el valor del pH que quieres conseguir en campo desplegable  <b class="oliva">'pH deseado'</b>.</p><p class="pea">&nbsp;</p>
+				 <p class="pbs"><b>5.</b> O mueve el cursor del <i>selector deslizante</i> hasta el valor de CL deseado.</p><p class="pea">&nbsp;</p>
+		         <p class="pbs"><b>6.</b> Justo debajo se muestran los productos y cantidades necesarias para conseguir el nuevo pH</p><p>&nbsp;</p>
+
+		         <h4>BAJAR EL pH</h4>
+				 <p class="pea">&nbsp;</p>
+                 <p class="pbm">Si has introducido un valor de pH deseado inferior al pH actual, o sea <b><small>bajar pH</small></b>, debajo te marcará
+                   la cantidad de <i>salfuman o aguafuerte</i> que tienes que añadir. El sulfuman es <i>ácido clorhídrico diluido</i>, su concentración
+                   se expresa en %, hemos seleccionado el de 20% porque es el más corriente en el mercado, pero tienes que introducir el que vas a utilizar tú, lo encontrarás en la etiqueta del envase.
+			       Algunas veces en la etiqueta del envase te lo pone en grados Baumé (<i>ºBaumé o ºBe</i>, cada ºBe equivale a 1,54%). Por ello mas arriba, 
+			       en <b>'Concentración salfuman'</b> tienes las opción de elegir entre <b>'%'</b> y <b>'ºBe'</b> como unidad. 
+				   Elige la que te viene en la etiqueta del envase.
+			     </p><p>&nbsp;</p>
+				 <p class="pbm">Si prefieres utilizar <i>minorador sólido</i> para bajar el pH, está indicado en el campo <i>'Bisulfato sódico'</i>, que es el más corriente
+                   en el mercado</p>
+				   <p>&nbsp;</p>
+                 <h4>SUBIR EL pH</h4>
+				 <p class="pea">&nbsp;</p>
+		         <p class="pbm">Si has introducido un valor de pH deseado mayor que el pH actual, o sea <b><small>subir pH</small></b>, debajo te mostrará
+                   la cantidad de <i>incrementador de pH</i> que tienes que añadir. Hemos seleccionado <i>'carbonato sódico'</i> por ser lo más común para este uso                   por .</p>
+				   <p>&nbsp;</p>		  
+			  
+			     <p>NOTA IMPORTANTE</p><p>&nbsp;</p>
+                 <p class="pbm">Las cantidades de minorador o incrementador calculadas son puramente indicativas, pueden variar considerablemente en base a otros factores que afectan al pH,
+                   tales como la alcalinidad, ácido cinúrico, dureza cálcica, etc que influyen de forma sustancial. Estas diferencias son aun mayores según las diferencias entre pH (pH actual y pH deseado) van haciéndose mayores y 
+			       y también según nos alejamos de valores próximos a 7 (por arriba y por abajo). Por ello, <i>sirven solo como punto de partida</i>, en la práctica, se debe añadir el
+			       minorador o incrementador poco a poco, y medir el pH cada vez, hasta que alcancemos el valor deseado. Para más detalle, pincha en este enlace (próximamente)</p>
+                  <p>&nbsp;</p></div>
+         </div>
+	    
+         <div class="inputArea-ancha fondo-no-sel">
+         <h3 class="fondo-no-sel">&nbsp;&nbsp;&nbsp;<font class="35en">ADJUSTING <b>TOTAL ALKALINITY (TA)</b></font><a href="http://www.easy-pool.es/calculator.html#"><div class="interrog posIntrrogA" id="lblm-ayudaAT"></div></a></h3>
+
+	         <div class="subarea-estrecha">													 
+	    	     <label class="13en ng">Current TA</label>
+			     <p><input type="text" id="entr_InicioAT" class="input_ctl ctlA an40" onkeypress="return numbersonly(event, false)" <="" input="">&nbsp;ppm</p><br><br>
+		         <img id="imgAT" class="flota-der" alt="" height="60" src="http://www.easy-pool.es/portada_bis/cs-hdp/imageset/AT.png">
+		     </div>
+				
+	         <div class="subarea-ancha padd-6">													 
+	 	       	      <label class="14en ng oliva">TA target</label>
+    			     <p><input type="text" id="entr_FinalAT" class="input_ctl ctlB an40" onkeypress="return numbersonly(event, false)">&nbsp;ppm</p>
+
+   			     <div class="img-escala fdo-escAT">
+                     <div id="sliderAT" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="width:21.5em">
+                        <a style="left: 33.3333%;" class="ui-slider-handle ui-state-default ui-corner-all" href="http://www.easy-pool.es/calculator.html#"></a>
+	                 </div>
+	             </div>	 
+
+			     <div id="div_alc_carb" style="margin-left:330px;margin-top:-40px;">
+			         <label id="lblm-valAC" class="ayuda flota-izq" style="float:left"><a href="http://www.easy-pool.es/calculator.html#"><font class="39en">Show</font>&nbsp;<font class="27en">Carbonate Alkalinity</font></a></label>
+			         <label class="ayuda ocultar" style="float:left" id="lblo-valAC"><a href="http://www.easy-pool.es/calculator.html#"><font class="28en">Hide</font></a></label>
+				     <p>&nbsp;</p><p>&nbsp;</p>
+				     <span id="p_alc_carb" class="no_visible"><font class="29en">Carb. Alkalinity:</font>&nbsp;<input type="text" class="input_ctl an35" id="alc_carb" disabled="disabled">&nbsp;ppm</span>
+			     </div> 
+
+				     <p class="pbs">&nbsp;</p>
+				     <span id="incAT"><img src="./Easy calculator for pool design and maintenance_files/icon_subir.gif"><font class="25en">Add</font>&nbsp;
+				     <input class="input_ctl an35" id="entr_bicarb" type="text" disabled="disabled">&nbsp;<b>gr</b>&nbsp;<font class="26en">of</font>&nbsp;<font class="20en"><b>baking soda</b> (sodium bicarbonate)</font>&nbsp;
+				     </span>
+			         <p class="peb">&nbsp;</p>
+                     <img src="./Easy calculator for pool design and maintenance_files/icon_bajar.gif">
+				     <span id="minAT" class="24en" style="margin-left:-5px">Add <b>muriatic a.</b> to lower TA. If <b>pH drops to 7.0</b> and TA still remains high, see <b>'TA help'</b></span><p>&nbsp;</p>
+		     </div>
+         </div>
+	     <div id="ayudaAT" class="inputArea-ancha fondo-no-sel ocultar">
+
+				 <h4 class="fondo-no-sel" style="width:100%">&nbsp;&nbsp;&nbsp;<font class="36en">ADJUSTING 'TOTAL ALKALINITY' (TA)---HELP</font>
+                 <label class="ayuda flota-der" id="lblo-ayudaAT"><a href="http://www.easy-pool.es/calculator.html#"><font class="28en">Hide</font>&nbsp;&nbsp;&nbsp;</a></label></h4>
+
+		     <div id="ayudaAT-aux" class="subarea-ayuda fondo-no-sel gs">			 
+<p class="pbs"><b>1.</b> No olvidar cumplimentar el campo <b class="color-Oliva">'Volumen agua'</b> en <b class="color-Oliva">'Mi Piscina'</b></p>
+<p class="pea">&nbsp;</p>
+<p class="pbs"><b>2.</b> Introduce el valor medido o conocido del AT en el campo <b class="color-Oliva">'AT actual'</b></p>
+<p class="pea">&nbsp;</p>
+<p class="pbs"><b>3.</b> Introduce el valor del AT que quieres conseguir en campo <b class="color-Oliva">'AT deseado'</b>.
+</p><p class="pea">&nbsp;</p>
+<p class="pbs"><b>4.</b> O mueve el cursor del <i>selector deslizante</i> hasta el valor de AT deseada.
+</p><p class="pea">&nbsp;</p>
+<p class="pbs"><b>5.</b> Justo debajo, en línea resaltada, se muestra la cantidad de <i>bicarbonato sódico</i>
+que hay añadir para elevar la AT al valor deseado</p><p>&nbsp;</p>
+
+<p class="pbm">Si has introducido un valor de 'AT deseado' menor que el 'AT actual', o sea trata de <b>bajar la AT</b>, comience añadiendo
+salfuman para bajar el pH. Oservará que tambien baja la AT.</p><p class="pea">&nbsp;</p>
+<p class="pbm">Añada safuman poco a poco, y mida cada vez pH y AT, cuando alcances el nuevo valor reducido de la AT, el proceso ha terminado. 
+Pero si el pH baja a 7,0 antes que la AT se baje al valor deseado, sube entonces el pH hasta 7.2 por el método de <i>aireación</i>.
+De nuevo añade salfuman para reducir la AT, repite el proceso cuantas veces precisas para conseguir reducir la AT al valor deseado. Pincha aquí 
+para más información (próximamente)</p><p>&nbsp;</p>		  
+</div>
+         </div>
+         <div class="inputArea-ancha fondo-no-sel">
+         <h3 class="fondo-no-sel">&nbsp;&nbsp;&nbsp;<font class="37en">ADJUSTING <b>CALCIUM HARDNESS (CH)</b></font>
+		 <a href="http://www.easy-pool.es/calculator.html#"><div class="interrog posIntrrogA" id="lblm-ayudaDC"></div></a></h3>
+
+    	     <div class="subarea-estrecha">													 
+	    	     <label class="15en ng">Current CH</label>
+			     <p><input type="text" id="entr_InicioDC" class="input_ctl ctlA an40" onkeypress="return numbersonly(event, false)">&nbsp;ppm</p><br><br>
+		        <img id="imgDC" class="flota-der" alt="" height="60" src="http://www.easy-pool.es/portada_bis/cs-hdp/imageset/DC.png">
+	         </div>
+				
+	         <div class="subarea-ancha padd-6">													 
+		             <!-- <img style="float:right" src="portada_bis/cs-hdp/imageset/DurezaCalcica.png" alt="" height="25">-->
+			          <label class="16en ng oliva">CH target</label>
+			         <p><input type="text" id="entr_FinalDC" class="input_ctl ctlB an40" onkeypress="return numbersonly(event, false)">&nbsp;ppm</p>
+
+			     <div class="img-escala fdo-escDC">
+                     <div id="sliderDC" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="width:21.5em">
+                        <a style="left: 42.8571%;" class="ui-slider-handle ui-state-default ui-corner-all" href="http://www.easy-pool.es/calculator.html#"></a>
+	                 </div>
+	             </div>	 
+               
+			     <div id="avisoDC" style="margin-left:340px;margin-top:-85px;color:red; display:none"><b>Atención:</b><p class="pbs"><b></b>
+			       <font class="39Aen">Warning: the DC can't be lowered further with the water available to refill, please, use softer water or reduce DC by other means</font></p>
+			     </div> 
+
+			         <p class="pbs">&nbsp;</p>
+				     <span id="incDC"><img src="./Easy calculator for pool design and maintenance_files/icon_subir.gif">&nbsp;<font class="25en">Add</font>&nbsp;
+				     <input class="input_ctl an35" id="entr_clor_cal" type="text" disabled="disabled">
+				     &nbsp;<b>gr</b>&nbsp;<font class="26en">of</font>&nbsp;<font class="21en"><b>calcium chloride (anhydrous)</b> or</font>
+				     <input type="text" id="entr_clor_cal_dihdr" class="input_ctl an40" disabled="disabled">&nbsp;<b>gr</b>&nbsp;<font class="22en"><b>(dihydrate)</b></font></span>
+			         <p class="pba">&nbsp;</p>
+			         <span id="minDC"><img src="./Easy calculator for pool design and maintenance_files/icon_bajar.gif">&nbsp;<font class="30en">Replace</font>&nbsp;
+				     <input class="input_ctl an35" id="remplazo_agua" type="text" disabled="disabled">&nbsp;<b>m³</b>&nbsp;<font class="31en">of the pool water by <b>fresh water</b> of CH</font>&nbsp;
+				      &nbsp;<input type="text" id="dur_calcica_agua_remplazo" class="input_ctl an40" onkeypress="return numbersonly(event, false)">&nbsp;ppm</span>
+                     <p>&nbsp;</p>
+		     </div>
+	         <div id="ayudaDC" class="inputArea-ancha fondo-no-sel ocultar">  
+                     
+				     <h4 class="fondo-no-sel" style="width:100%">&nbsp;&nbsp;&nbsp;<font class="38en">ADJUSTING CALCIUM HARDNESS -- HELP</font>
+                     <label class="ayuda flota-der" id="lblo-ayudaDC"><a href="http://www.easy-pool.es/calculator.html#"><font class="28en">Hide</font>&nbsp;&nbsp;&nbsp;</a></label></h4>
+
+                 <div id="ayudaDC-aux" class="subarea-ayuda fondo-no-sel gs"><p class="pbs"><b>1.</b> No olvidar cumplimentar el campo <b class="color-Oliva">'Volumen agua'</b> en <b class="color-Oliva">'Mi Piscina'</b></p>
+<p class="pea">&nbsp;</p>
+<p class="pbs"><b>2.</b> Introduce el valor medido o conocido de la DC en el campo <b class="color-Oliva">'DC actual'</b></p>
+<p class="pea">&nbsp;</p>
+<p class="pbs"><b>3.</b> Introduce el valor  de la DC que quieres conseguir en campo <b class="color-Oliva">'DC deseada'</b>.</p>
+<p class="pea">&nbsp;</p>
+<p class="pbs"><b>4.</b> O mueve el cursor del <i>selector deslizante</i> hasta el valor de DC deseada.
+</p><p class="pea">&nbsp;</p>
+<p class="pbs"><b>5.</b> Justo debajo se muestra  cuanto <i>cloruro cálcico</i> hay que agregar (caso subir la DC) o cuánta agua hay 
+que remplazar (caso bajar la DC) para conseguir el nuevo nivel de DC:</p> 
+<p>&nbsp;</p>
+                 
+<p>OBSERVACIONES</p><p>&nbsp;</p>
+<p class="pbm">Si has introducido un valor de DC deseado superior al DC actual, o sea, deseas <b>subir la DC</b>, debajo te marcará
+la cantidad de <i>cloruro cálcico</i>, en sus dos modalidades, que tienes que añadir</p>
+<p class="pea">&nbsp;</p>
+<p class="pbm">El cloruro cálcico normal en el mercado es la variedad "anhidro", con masa molecular de 111 g/mol. También se comercializa otras varias modalidades
+hidratadas, la más común es la "dihidratada", con masa molecular de 147 gr/mol. Verifique la etiqueta del envase, pues como indica el calculador, gastara un 32% más de
+"dihidro" que de "anhidro" para el mismo incremento de dureza cálcica.</p>
+<p class="pea">&nbsp;</p>
+<p class="pbm">Pero si has introducido un valor de <i>DC deseada</i> menor que el de <i>DC actual</i>, o sea, deseas <b>bajar la DC</b>,
+observa que el CALCULADOR solo contempla la reducción de la DC mediante vaciado total o parcial del vaso y relleno con <b>agua nueva de menor dureza</b>. Introduce 
+la DC del agua que tienes para rellenar en el campo 'agua nueva de dureza'.</p>
+<p class="pea">&nbsp;</p>
+<p class="pbm">Entonces, cuando trate de bajar la DC, verá que en el campo <i>Remplazar'</i> se muestra la cantidad de agua que tiene que
+remplazar para conseguir la nueva DC reducida. Hay otras maneras de reducir la DC. Pincha aquí para saber cómo hacerlo (próximamente).</p><p>&nbsp;</p>	
+</div>
+        	 </div>
+         </div>
+     </div>
+     <div class="col-der">
+  <!--INICIO CODIGO PUBLICIDAD LI-1//-->   
+ <script type="text/javascript"><!--
+             google_ad_client = "ca-pub-1338539579977515";
+            /* Skyscraper ancho 160x600 */
+             google_ad_slot = "2546949258";
+             google_ad_width = 160;
+             google_ad_height = 600;
+             //-->
+            </script>
+              <script type="text/javascript" src="./Easy calculator for pool design and maintenance_files/show_ads.js.descarga">
+
+ </script><ins id="aswift_0_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent;"><iframe width="160" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;width:160px;height:600px;" src="./Easy calculator for pool design and maintenance_files/saved_resource.html"></iframe></ins></ins> 	
+  <!--FIN CODIGO PUBLICIDAD LI-1//--> 
+ </div>
+</div>
+<div class="content" id="tab2" style="display: none;">
+     <div class="envolvente-ctl">
+        <h3 class="fondo-no-sel">&nbsp;&nbsp;&nbsp;<font class="41en">ADJUSTING <b>FREE CHLORINE </b>LEVEL</font><a href="http://www.easy-pool.es/calculator.html#"><div class="interrog posIntrrogA" id="lblm-ayudaCL"></div></a></h3>
+
+        <div class="inputArea-ancha fondo-no-sel ">
+	        <div class="subarea-estrecha">													 
+		         <label class="42en ng">Current FC</label><p>
+			     <input id="entr_InicioCL" class="input_ctl ctlA an40" type="text" onkeypress="return numbersonly(event, false)">&nbsp;ppm</p>
+		    </div>
+	        <div class="subarea-ancha" style="position:relative">													 
+                <div class="sub-sub-area padd-6 fondo-no-sel">	
+			         <label class="59Ben oliva"><b>FC target</b></label>
+				     <span class="flota-der an325"><font class="59Aen oliva"><b>Slider range</b></font></span>
+			         <p><input id="entr_FinalCL" class="input_ctl ctlB an45" type="text" onkeypress="return numbersonly(event, false)">&nbsp;ppm
+				     <span class="flota-der an325"><select id="escala_CL" class="input_ctl ctlBLf ctr-sel an100">
+				     <option>0 -  5 ppm</option><option>0 - 50 ppm</option></select>&nbsp;</span></p>
+				     <div id="escalaCL" class="img-escala fdo-escCL">
+                        <div id="sliderCL" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="width:21.5em">
+                            <a style="left: 30%;" class="ui-slider-handle ui-state-default ui-corner-all" href="http://www.easy-pool.es/calculator.html#"></a>
+	                    </div>
+	                 </div>
+                     <p>&nbsp;</p>
+				 </div>
+		         <h4 class="fondo-no-sel">&nbsp;&nbsp;<font class="44en">Using <b>unstabilized chlorine</b></font></h4>
+                 <div class="sub-sub-area padd-6 fondo-no-sel">	
+				     <p class="pm5">&nbsp;</p>
+				     <img src="./Easy calculator for pool design and maintenance_files/icon_subir.gif">
+					 <span id="incCL1"><font class="25en">Add</font>&nbsp;
+				     <input id="entr_lejia" class="input_ctl an45" type="text" disabled="disabled">
+					 <b>gr</b><font class="45en"> of <b>bleach</b> of </font>
+				     <select id="perc_lejia" class="input_ctl ctr-sel a63" onchange="Calcular_CL ();"><option value="1">1%</option><option value="2">2%</option><option value="3">3%</option><option value="4">4%</option><option value="5">5%</option><option value="6">6%</option><option value="7">7%</option><option value="8">8%</option><option value="9">9%</option><option value="10">10%</option><option value="11">11%</option><option value="12">12%</option><option value="13">13%</option><option value="14">14%</option><option value="15">15%</option><option value="16">16%</option><option value="17">17%</option><option value="18">18%</option><option value="19">19%</option><option value="20">20%</option></select> of <b>active chlorine</b> by <b>weight</b> or
+				     <p class="pm5">&nbsp;</p>
+				     <p><img src="./Easy calculator for pool design and maintenance_files/icon_subir.gif">
+					 <font class="25en">Add</font>&nbsp;
+				     <input id="entr_hipocal" class="input_ctl an45" type="text" disabled="disabled">&nbsp;<b>gr</b><font class="46en"> of <b>cal-hypo</b> with <b>65%</b> available chlorine</font></p>
+				     <p class="pm5">&nbsp;</p></span>
+				 </div>
+                 <h4 class="fondo-no-sel">&nbsp;&nbsp;<font class="47en">Using <b>trichlor</b> (Trichloro-isocyanuric acid)</font></h4>
+                 <div class="sub-sub-area padd-6 fondo-no-sel">	
+				     <p class="pm5">&nbsp;</p>
+                     <img src="./Easy calculator for pool design and maintenance_files/icon_subir.gif">
+					 <span id="incCL2"><font class="25en">Add</font>&nbsp;
+		             <input class="input_ctl an50" id="entr_tricloro" type="text" disabled="disabled">&nbsp;<b>gr</b><font class="48en"> of <b>trichlor</b></font><p class="pm5">&nbsp;</p>
+				     <p><img src="./Easy calculator for pool design and maintenance_files/icon_subir.gif"><font class="50en"><b>Cyanuric acid</b> rise to </font><input class="input_ctl an50" id="entr_ACN_Tri" type="text" disabled="disabled">&nbsp;ppm</p></span>
+				     <p class="pm5">&nbsp;</p>
+		         </div>
+                  <h4 class="fondo-no-sel">&nbsp;&nbsp;<font class="49en">Using <b>dichlor</b> (dichloro-isocyanuric acid)</font></h4>
+				 <div class="sub-sub-area padd-6 fondo-no-sel">	
+				     <p class="pm5">&nbsp;</p>
+				     <img src="./Easy calculator for pool design and maintenance_files/icon_subir.gif">
+					 <span id="incCL3"><font class="25en">Add</font>&nbsp;
+				     <input type="text" id="entr_dicloro" class="input_ctl an50" disabled="disabled">&nbsp;<b>gr</b>
+					 <font class="51en"> of <b>dichlor</b></font><p class="pm5">&nbsp;</p>
+				     <p><img src="./Easy calculator for pool design and maintenance_files/icon_subir.gif">
+					 <font class="50en"><b>Cyanuric</b> acid rise to </font>
+				     <input class="input_ctl an45" id="entr_ACN_Di" type="text" disabled="disabled">&nbsp;ppm</p></span>
+				     <p class="pm5">&nbsp;</p>
+                 </div>		   
+                 <h4 class="fondo-no-sel">&nbsp;&nbsp;<font class="52en">Chemicals to <b>reduce chlorine level</b></font></h4>
+                 <div class="sub-sub-area padd-6 fondo-no-sel">	
+				     <p class="pm5">&nbsp;</p>
+					 <img src="./Easy calculator for pool design and maintenance_files/icon_bajar.gif">
+					 <span id="minCL"><font class="25en">Add</font>&nbsp;
+				     <input class="input_ctl an45" id="entr_tiosulfito" type="text" disabled="disabled">&nbsp;<b>gr</b>
+					 <font class="53en"> of <b>sodium thiosulfate</b> or </font>
+					 <p class="pm5">&nbsp;</p>					 
+
+					 <img src="./Easy calculator for pool design and maintenance_files/icon_bajar.gif">
+					 <font class="25en">Add</font>&nbsp;
+				     <input class="input_ctl an45" id="entr_bisulfito" type="text" disabled="disabled">&nbsp;<b>gr</b>
+					 <font class="54en"> of <b>sodium bisulfite</b> or</font>
+				     <input class="input_ctl an45" id="entr_metabisulfito" type="text" disabled="disabled">&nbsp;<b>gr</b>
+					 <font class="55en"> of <b>sodium metabisulfite</b> or</font>
+					 <p class="pm5">&nbsp;</p>					 
+
+					 <img src="./Easy calculator for pool design and maintenance_files/icon_bajar.gif">
+					 <font class="25en">Add</font>&nbsp;
+				     <input class="input_ctl an45" id="entr_vitC" type="text" disabled="disabled">&nbsp;<b>gr</b>
+					 <font class="56en"> of <b>ascorbic acid</b> or</font>  
+				     <input class="input_ctl an40" id="entr_peroxido" type="text" disabled="disabled">&nbsp;<b>gr</b>
+					 <font class="57en"> of <b>hydrogen peroxide</b> al </font>
+					 <select id="perc_peroxido" class="input_ctl ctr-sel an55"><option>3%</option><option>6%</option><option>9%</option><option>15%</option>
+					 <option>20%</option><option>25%</option><option>30%</option><option>35%</option><option>40%</option></select>&nbsp;</span>
+				     
+					 <p class="pm5">&nbsp;</p>
+					 
+             </div>		   
+         </div>
+		 <div id="ayudaCL" class="inputArea-ancha fondo-no-sel ocultar">  
+				     <h4 class="fondo-no-sel" style="width:100%">&nbsp;&nbsp;&nbsp;<font class="49Aen">ADJUSTING <b>FREE CHLORINE</b> LEVEL -- HELP</font>
+                     <label class="ayuda flota-der" id="lblo-ayudaCL"><a href="http://www.easy-pool.es/calculator.html#"><font class="28en">Hide</font>&nbsp;&nbsp;&nbsp;</a></label></h4>
+                 <div id="ayudaCL-aux" class="subarea-ayuda fondo-no-sel gs"><p class="pbs"><b>1. </b> No olvidar cumplimentar el campo <b>'Volumen agua'</b> en el área <b>'Mi Piscina'.</b></p><p class="pea">&nbsp;</p>
+<p class="pbs"><b>2. </b> Mide el <i>cloro libre (CL</i>) e introduce su valor en el campo desplegable <b>'CL actual'</b></p><p class="pea">&nbsp;</p>
+<p class="pbs"><b>3. </b> Si usas <i>cloro líquido (lejía)</i>, introduce su graduación (ver como abajo)</p><p class="pea">&nbsp;</p>
+<p class="pbs"><b>4. </b> Introduce el valor de CL que quieres conseguir en campo <b>'CL deseado'</b></p><p class="pea">&nbsp;</p>
+<p class="pbs"><b>5. </b> O mueve el cursor del <b>selector deslizante</b>  hasta el nuevo valor de CL.</p><p class="pea">&nbsp;</p>
+<p class="pbs"><b>6. </b> Pulsa <b>'Intro'</b> al terminar de introducir valores (no con el selector deslizante).</p><p class="pea">&nbsp;</p>
+<p class="pbs"><b>7. </b> Debajo aparecen productos y cantidades necesarias para bajar/subir el CL</p><p>&nbsp;</p><p class="pea">&nbsp;</p>
+
+<h4>AUMENTAR EL NIVEL DE CLORO LIBRE (CL)</h4><p>&nbsp;</p>
+
+<p class="pbm txt-justificado">Si lo que tratas es subir el nivel de CL con cloro líquido, el CALCULADOR propone por defecto el uso de <b>lejía</b>
+en versi,onn doméstica, que no es sino una solución del compuesto de cloro <i>hipoclorito sódico</i> con una concentración baja de cloro activo, sobre el 5%.
+No obstante, en tiendas grandes de piscinas pueden adquirirse garrafas de hipoclorito sódico con una concentración mucho mayor, entre el 15% y el 20%.
+En cualquier caso, busque siempre, en la etiqueta del recipiente de cloro líquido que va a utilizar, el valor su concentración, e introdúzcalo en el 
+correspondiente campo del CALCULADOR</p><p>&nbsp;</p>
+
+<p class="pbm txt-justificado">El CALCULADOR le propone también un compuesto de cloro no estabilizado en formato granulado o en tabletas: <b>hipoclorito
+cálcico</b>. Pero este compuesto  aumenta también la dureza cálcica del agua, por lo cual su utilización de forma continuada
+exige una cuidadosa vigilancia de la dureza cálcica para prevenir un valor tan alto que convierta el agua en incrustante 
+(ISL demasiado alto)</p><p></p><p>&nbsp;</p>
+
+<p class="pbm txt-justificado">También el mercado ofrece otros compuestos de cloro en formato sólido o granulado para uso en piscinas: <b>dicloro</b>
+(ácido dicloroisocianúrico) que se presenta en forma granulada de disolución rápida, y <b>tricloro</b> (ácido tricloroisocianúrico) genaralmente en formato tabletas de disolución lenta (solo tricloro
+o <i>multiefectos</i>).</p><p></p><p>&nbsp;</p> 
+<p class="pbm txt-justificado">El problema es que ambos tipos de compuestos de cloro llevan estabilizador incorporado (ácido cianurico, ACN). Por ello, la utilización de cualquiera 
+de estos dos tipos de cloro supone una aportación continuada de ácido cianúrico, que se acumula y termina por hacer el cloro ineficaz. La única forma de rebajar un
+alto valor de ACN es vaciar total o parcialmente el agua de su piscina y rellenarla con agua de red.</p><p class="pea">&nbsp;</p>
+
+<p class="pbm txt-justificado">El CALCULADOR calcula cuanto aumentará el contenido de ACN por cada cantidad de tricloro o dicloro que vaya a 
+agregar a su piscina. Esta es una información preciosa que le ayudara a controlar el contenido de ACN de su piscina y pueda tomar medidas antes de 
+de llegar a valores de ACN irremediables.</p><p>&nbsp;</p><p></p><p>&nbsp;</p>
+
+<h4>REBAJAR EL NIVEL DE CLORO LIBRE (CL)</h4><p>&nbsp;</p>
+ 
+<p class="pbm txt-justificado">Si no tiene demasiada prisa, la mejor forma de rebajar el contenido de cloro es esperar unos días sin añadir
+cloro. La radiación solar y el propio consumo en oxidación/desinfección se encargarán de rebajarlo sin añadir más productos químicos.</p><p>&nbsp;</p>
+
+<p class="pbm txt-justificado">
+No obstante, si tiene prisas, ya sea porque la piscina es interior o está poco soleada, o bien después de una supercloración, dispone en el mercado
+de un amplio muestrario de productos químicos que añadidos al agua neutralizan el cloro con rapidez. El CALCULADOR le presenta cuanto producto hay que 
+agregar al agua para rebajar el nivel de cloro al valor que Ud. desee. El CALCULADOR le presenta hasta 5 productos diferentes para elegir:</p><p class="pea">&nbsp;</p><p>&nbsp;</p>
+
+<p class="pbm"><b>* </b><i>Tiosulfato de sodio.</i></p><p class="pea">&nbsp;</p>
+<p class="pbm"><b>* </b><i>Bisulfito de sodio.</i></p><p class="pea">&nbsp;</p>
+<p class="pbm"><b>* </b><i>Metabisulfito de sodio.</i></p><p class="pea">&nbsp;</p>
+<p class="pbm"><b>* </b><i>Acidi ascorbico (vitamina C)</i></p><p class="pea">&nbsp;</p>
+<p class="pbm"><b>* </b><i>Peróxido de hidrógeno (agua oxigenada)</i></p><p>&nbsp;</p><p class="pea">&nbsp;</p>
+
+<p class="pbm">Elija el producto que mas la convenga</p><p></p>
+
+<p class="pbm">Mas información sobre el tema en (próximamente)</p></div>
+		 </div>
+     </div>
+</div>
+<div class="col-der">
+  <!--INICIO CODIGO PUBLICIDAD LI-1//-->   
+ <script type="text/javascript"><!--
+             google_ad_client = "ca-pub-1338539579977515";
+            /* Skyscraper ancho 160x600 */
+             google_ad_slot = "2546949258";
+             google_ad_width = 160;
+             google_ad_height = 600;
+             //-->
+            </script>
+              <script type="text/javascript" src="./Easy calculator for pool design and maintenance_files/show_ads.js.descarga">
+
+ </script><ins id="aswift_1_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent;"><iframe width="160" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;width:160px;height:600px;" src="./Easy calculator for pool design and maintenance_files/saved_resource(1).html"></iframe></ins></ins> 	
+  <!--FIN CODIGO PUBLICIDAD LI-1//--> 
+
+</div>
+</div>
+<div class="content" id="tab3" style="display: none;">
+    <div class="envolvente-ctl">
+    <div class="inputArea-ancha fondo-no-sel ">
+          <h3 class="fondo-no-sel">&nbsp;&nbsp;&nbsp;<font class="61en">ADJUSTING <b>BROMINE (BR) </b>LEVEL</font><a href="http://www.easy-pool.es/calculator.html#"><div class="interrog posIntrrogA" id="lblm-ayudaBR"></div></a></h3>
+
+	     <div class="subarea-estrecha">													 
+		    <label class="62en ng">Current BR</label><p>
+			<input id="entr_InicioBR" class="input_ctl ctlA an40" type="text" onkeypress="return numbersonly(event, false)">&nbsp;ppm</p>
+		 </div>
+	     <div class="subarea-ancha" style="position:relative">													 
+                 <div class="sub-sub-area padd-6 fondo-no-sel">	
+			         <label class="63en ng oliva">BR target</label>, ppm
+				     <span class="flota-der an325"><font class="63Ben oliva"><b>Slider range</b></font></span>
+			         <p><input id="entr_FinalBR" class="input_ctl ctlB an40" type="text" onkeypress="return numbersonly(event, false)">&nbsp;ppm
+				     <span class="flota-der an325"><select id="escala_BR" class="input_ctl ctlBLf ctr-sel an100">
+				     <option>0 -  7 ppm</option><option>0 - 70 ppm</option></select>&nbsp;</span></p>
+ 			         <div id="escalaBR" class="img-escala fdo-escBR7">
+                         <div id="sliderBR" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="width:21.5em">
+                            <a style="left: 42.8571%;" class="ui-slider-handle ui-state-default ui-corner-all" href="http://www.easy-pool.es/calculator.html#"></a>
+	                     </div>
+	                 </div>
+                     <p>&nbsp;</p>
+				 </div>
+		         <h4 class="fondo-no-sel">&nbsp;<font class="64en">Using <b>bromine tablets</b></font></h4>
+                 <div class="sub-sub-area padd-6 fondo-no-sel">	
+				     <p class="pm5">&nbsp;</p> 
+				     <span id="incBR1">
+					 <img src="./Easy calculator for pool design and maintenance_files/icon_subir.gif">&nbsp;<font class="25en">Add</font>&nbsp;
+				     <input id="entr_bromocloro" class="input_ctl an40" type="text" disabled="disabled">&nbsp;<b>gr</b>&nbsp;
+					 <font class="65en"> of <b>bromochloro</b> (BCDMH) tablets</font> 
+				     <p class="pm5">&nbsp;</p>
+				     <p><img src="./Easy calculator for pool design and maintenance_files/icon_subir.gif">&nbsp;<font class="25en">Add</font>&nbsp;
+				     <input id="entr_dibromo" class="input_ctl an40" type="text" disabled="disabled">&nbsp;<b>gr</b>
+					 <font class="66en"> of <b>dibromo</b> (DBDMH) tablets</font></p></span>
+				 </div>
+                 <h4 class="fondo-no-sel">&nbsp;<font class="67en">Activating the <b>Bromide bank</b></font></h4>
+                 <div class="sub-sub-area padd-6 fondo-no-sel">	
+				     <p class="pm5">&nbsp;</p>
+					 <span id="incBR2"> 
+				     <img src="./Easy calculator for pool design and maintenance_files/icon_subir.gif">&nbsp;<font class="25en">Add</font>&nbsp;
+				     <input id="entr_lejia_BR" class="input_ctl an40" type="text" disabled="disabled">&nbsp;<b>ml</b>
+					 <font class="68en"> of <b>bleach</b> solution </font>
+				     <select id="perc_lejia_BR" class="input_ctl ctr-sel a63" onchange="Calcular_BR ();"><option value="1">1%</option><option value="2">2%</option><option value="3">3%</option><option value="4">4%</option><option value="5">5%</option><option value="6">6%</option><option value="7">7%</option><option value="8">8%</option><option value="9">9%</option><option value="10">10%</option><option value="11">11%</option><option value="12">12%</option><option value="13">13%</option><option value="14">14%</option><option value="15">15%</option><option value="16">16%</option><option value="17">17%</option><option value="18">18%</option><option value="19">19%</option><option value="20">20%</option></select>&nbsp;
+				     <p class="pm5">&nbsp;</p>
+				     <p><img src="./Easy calculator for pool design and maintenance_files/icon_subir.gif">&nbsp;<font class="25en">Add</font>&nbsp;
+				     <input id="entr_hipocal_BR" class="input_ctl an40" type="text" disabled="disabled">&nbsp;<b>gr</b>
+					 <font class="69en"> of <b>cal-hypo</b></font></p><p class="pm5">&nbsp;</p>
+				     <p><img src="./Easy calculator for pool design and maintenance_files/icon_subir.gif">&nbsp;<font class="25en">Add</font>&nbsp;
+				     <input id="entr_MPS" class="input_ctl an40" type="text" disabled="disabled">&nbsp;<b>gr</b>
+					 <font class="70en"> of <b>MPS</b> (Active oxigen)</font></p></span>  <!--43%, densidad 1,20,Oxone DP--> 
+                     <p class="pm5">&nbsp;</p>
+		         </div>
+                 <h4 class="fondo-no-sel">&nbsp;&nbsp;<font class="69Aen">Chemicals to <b>reduce bromine level</b></font></h4>
+                 <div class="sub-sub-area padd-6 fondo-no-sel">	
+				     <p class="pm5">&nbsp;</p>
+					 <span id="minBR">
+					 <img src="./Easy calculator for pool design and maintenance_files/icon_bajar.gif"><font class="25en">Add</font>&nbsp;
+				     <input class="input_ctl an45" id="entr_tiosulfitoBR" type="text" disabled="disabled">&nbsp;<b>gr</b>
+					 <font class="53en"> of <b>sodium thiosulphate</b></font></span>
+					 <p class="pm5">&nbsp;</p>
+             </div>		   
+         </div>
+				 
+		 <div id="ayudaBR" class="inputArea-ancha fondo-no-sel ocultar">  
+				     <h4 class="fondo-no-sel" style="width:100%">&nbsp;&nbsp;&nbsp;<font class="69Ben">ADJUSTING <b>BROMINE(BR)</b> LEVEL -- HELP</font>
+                     <label class="ayuda flota-der" id="lblo-ayudaBR"><a href="http://www.easy-pool.es/calculator.html#"><font class="28en">Hide</font>&nbsp;&nbsp;&nbsp;</a></label></h4>
+                 <div id="ayudaBR-aux" class="subarea-ayuda fondo-no-sel "><p class="pbs"><b>1. </b> No olvidar cumplimentar el campo <b>Volumen agua</b> en el área <b>Mi Piscina.</b></p>
+<p class="pea">&nbsp;</p>
+<p class="pbs"><b>2. </b> Mide nivel de <i>bromo</i> e introduce su valor en el campo <b>BR actual</b></p>
+<p class="pea">&nbsp;</p>
+
+<p class="pbs"><b>3. </b> Si usas <i>cloro líquido (lejía)</i> como activador del banco de bromo, introduce </p>
+<p class="pbs">&nbsp;&nbsp;&nbsp;su graduación (ver <a href="http://www.easy-pool.es/calculator.html#" class="oliva">aquí</a> como hacerlo)</p>
+<p class="pea">&nbsp;</p>
+
+<p class="pbs"><b>4. </b> Introduce el valor de bromo que quieres conseguir en campo <b>BR deseado</b></p>
+<p class="pea">&nbsp;</p>
+
+<p class="pbs"><b>5. </b> O mueve el cursor del <b>selector deslizante</b> situado debajo hasta el valor de bromo</p>
+<p class="pbs">&nbsp;&nbsp;&nbsp;deseado.</p>
+<p class="pea">&nbsp;</p>   
+
+<p class="pbs"><b>6. </b> Pulsa <b>Intro</b> al terminar de introducir valores (no necesario con el <i>selector</i> 
+</p><p class="pbs">&nbsp;&nbsp;&nbsp;<i>deslizante</i>).</p>
+<p class="pea">&nbsp;</p>   
+
+<p class="pbs"><b>7. </b> Debajo se muestran productos y cantidades necesarias para subir o bajar el nivel de</p>
+<p class="pbs">&nbsp;&nbsp;&nbsp;bromo al valor deseado</p><p></p>
+<p class="pea1">&nbsp;</p>
+
+<p class="pbs"><b>NOTA:</b> Una piscina cubierta bromada tratada solo con sal de bromo y oxidante puede reconvertirse a piscina clorada,
+eliminando el banco de bromuro. Pero si es tratada con tabletas, ya sea cubierta o exterior, es necesario remplazar el agua para reconvertirla
+</p><p class="pea1">&nbsp;</p>
+
+<h4>AUMENTAR EL NIVEL DE BROMO</h4>
+<p class="pea">&nbsp;</p> 
+
+<p class="pbm">Hay dos modalidades para aportar el bromo necesario a una piscina o spa saneados con bromo: una modalidad (bromo en 1 pasos) consiste en
+aportación directa de bromo activo (ácido hipocloroso), como ingrediente que es de las tabletas de bromo. En la otra modalidad (bromo en 2 etapas) se fabrica el bromo activo en la propia piscina, 
+utilizando como materia prima un compuesto oxidante que agregamos al vaso, por ejemplo <i>cloro activo y/o MPS</i> (monopersufato de potasio) y/o <i>ozono</i>. Previamente deberemos haber creado una 
+reserva suficientemente alta de iones de bromuro (banco de bromo) de modo el agente oxidante convierta a los iones de bromuro en bromo activo 
+</p><p>&nbsp;</p> 
+
+<p class="pbm">Este segunda modalidad exige que en la piscina previamente exista una concentración de bromuro (banco de iones de bromo,
+banco de bromuro o simplemente <b>banco de bromo</b>) igual o superior a 15 ppm. Este banco de bromo se puede crear de forma instantánea, añadiendo al vaso una dosis suficiente de <i>sal de bromo</i> (bromuro sódico). 
+Pero también se crea por si solo en unas semanas después de tratar la piscina conforme a primera modalidad (adición directa de bromo activo).</p><p>&nbsp;</p><p class="pea">&nbsp;</p>
+
+<p><b>*&nbsp;&nbsp;Bromo en 1 etapa</b> (aportación bromo directo)</p><p>&nbsp;</p><p class="pea">&nbsp;</p> 
+
+<p class="pbm">
+En esta primera y única etapa, el bromo se aporta por erosión de tabletas de bromo-cloro o dibromo colocadas en un 
+dosificador o en el skimmer. El CALCULADOR muestra la cantidad en gramos de ambos compuestos para elevar el nivel de bromo del valor medido al deseado. 
+Pero atención, las tabletas de ambos tipos son de disolución muy lenta, dependiendo de número de tabletas en el dosificador la aportación calculada puede
+tardar días o semanas, consumiéndose por tanto en ese periodo bromo en su labor biocida oxidante. En la práctica, hay que medir con frecuencia el nivel de bromo
+y ajustar en número de tabletas y el tiempo de paso del agua por el dosificador  para que el nivel de bromo se mantenga siempre entre 2 y 4 ppm.</p><p>&nbsp;</p>
+
+<p class="pbm">Lo más cómodo y eficaz es una sonda que mide el ORP (REDOX) del agua y un controlador tarado a 700-750 mV. 
+La salida del controlador actúa sobre un elemento final de control (válvula motorizada o solenoide 3 vias ) que  regula automáticamente el paso de agua por dosificador
+para aportar el bromo necesario para mantener el ORP próximo o igual al valor tarado.</p><p>&nbsp;</p> 
+
+<p class="pbm">EL bromo-cloro (BCDMH) es un compuesto de bromo y cloro. Cuando se inicia el tratamiento de agua
+ con este producto, al principio cloro y bromo activos coexisten en el agua sumando sus capacidades desinfectantes. Antes o después 
+ se crea el banco de bromo y a  partir de entonces, todo el cloro es reducido a bromo, quedando el bromo como desinfectante único.</p><p>&nbsp;</p> 
+
+ <p class="pbm">Una vez iniciado el tratamiento, ya sea con bromo-cloro o con dibromo, se creará somo subproducto una concetración
+ de iones bromuro equivalente a la que hubiéramos creado mediante la adición directa de sal de bromo. Quiere esto decir que ya, en
+ cualquier momento podemos cambiar a un tratamiento de bromo del tipo de 2 etapas. Basta retirar o reducir el número de tabletas de 
+ bromo en el brominador o skimmer y empezar a dosificar oxidante (cloro, MPS y ozono). Por supuesto, es perfectamente posible continuar con un sistema mixto
+compartiendo la carga desinfectante entre bromo directo aportado por tabletas y bromo generado mediante adición de cloro, MPS u ozono</p><p>&nbsp;</p><p class="pea">&nbsp;</p>
+
+
+ <p><b>*&nbsp;&nbsp;Bromo en 2 etapas</b> (fabricación de bromo en la piscina)</p><p>&nbsp;</p><p class="pea">&nbsp;</p> 
+
+<p class="pbm">En la primera etapa se añade al agua una cantidad de sal de bromo (bromuro sódico) suficiente para crear una reserva inicial
+de iones bromuro de no menos de 30 ppm (banco de bromo). Hay que añadir  1,25 gr de sal de bromo por cada m³ de agua para aumentar 1 ppm de bromuro.
+Por ejemplo, en una piscina de 50 m³ tenemos que añadir  1,25*30*50 = 2 kg de  sal de bromo para crear el banco de bromo</p><p>&nbsp;</p>
+
+<p class="pbm">En la segunda etapa se aporta diriamente oxidante para generar el bromo activo suficiente para mantener su nivel 
+entre 2 y 4 ppm (3 y 6 ppm en caso de spas). En este caso, todo el bromo generado esta ya distribuido por el agua y la subida de bromo 
+activo es inmediata.</p><p>&nbsp;</p>
+
+<p class="pbm">El CALCULADOR muestra la cantidad de gramos para aumentar el nivel de bromo con tres productos oxidantes: </p><p class="pea">&nbsp;</p><p>&nbsp;</p>
+
+<p class="pbm"><b>* </b><i>Cloro líquido (lejía, hipoclorito sódico)</i></p><p class="pea">&nbsp;</p>
+<p class="pbm"><b>* </b><i>Cloro solido no estabilizado (hipoclorito cálcico)</i></p><p class="pea">&nbsp;</p>
+<p class="pbm"><b>* </b><i>MPS (monopersulfato de potasio), un tipo de oxígeno activo</i></p><p>&nbsp;</p><p class="pea">&nbsp;</p>
+
+<p class="pbm">El cloro líquido es especialmente adecuado para ser agregado a la piscina de forma automática gracias a su formato líquido. Basta una sencilla bomba 
+dosificadora controlada mediante una soda/controlador de ORP. Los otros dos tipos son mas difícil de ser dosificados automáticamente a causa de su formato
+tabletas o granulados de disolución rápida. Si se utiliza hipoclorito cálcico como oxidante, han de tomarse las mismas precauciones frente a la elevación de la dureza 
+cálcica en la piscina, véase la ayuda de ajuste de cloro</p><p>&nbsp;</p>
+<p class="pea1">&nbsp;</p>
+ 
+<h4>REBAJAR EL NIVEL DE BROMO</h4>
+ <p class="pea">&nbsp;</p>
+ <p class="pbm">Si no tiene demasiada prisa, la mejor forma de rebajar el contenido de bromo es esperar unos días sin añadir
+bromo o activador de bromuro. La radiación solar y el propio consumo en oxidación/desinfección se encargarán de rebajarlo sin añadir más productos químicos.
+</p><p>&nbsp;</p>
+<p class="pbm">El CALCULADOR muestra la cantidad de <b>tiosulfato sódico</b> que ha de aportarse al vaso para rebajat el nivel de bromo existente 
+al nivel deseado. El tiosulfato de sodico reduce el bromo activo, pero no afecta en absoluto al brumuro (banco de bromo). La piscina o spa sigue siendo
+bromada aunque reduzca a 0 el nivel de bromo</p>
+<p class="pea1">&nbsp;</p>
+</div>
+		 </div>
+	 </div>
+</div>
+<div class="col-der">
+  <!--INICIO CODIGO PUBLICIDAD LI-1//-->   
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-1338539579977515";
+/* Skyscraper ancho 160x600A */
+google_ad_slot = "8499645877";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="./Easy calculator for pool design and maintenance_files/show_ads.js.descarga">
+</script><ins id="aswift_2_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent;"><ins id="aswift_2_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent;"><iframe width="160" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;width:160px;height:600px;" src="./Easy calculator for pool design and maintenance_files/saved_resource(2).html"></iframe></ins></ins>
+  <!--FIN CODIGO PUBLICIDAD LI-1//--> 
+
+</div>
+</div>
+<div class="content" id="tab4" style="display: none;">
+    <div class="envolvente-ctl">
+        <h3 class="fondo-no-sel">&nbsp;&nbsp;<font class="72en"><b>PUMP SIZING</b></font><a href="http://www.easy-pool.es/calculator.html#"><div class="interrog posIntrrogA" id="lblm-ayudaCF"></div></a></h3>
+	    <div class="inputArea-ancha fondo-no-sel ">
+	        <div class="subarea-estrecha">													 
+		    </div>
+				
+	        <div class="subarea-ancha padd-6">													 
+			    <label class="73en oliva"><b>Pool Turnover time</b></label>
+				<span class="flota-der an207"><label class="74en oliva"><b>Pump flow</b></label></span>
+			    <p><input id="entr_FinalCF" class="input_ctl ctlB an40" type="text" onkeypress="return numbersonly(event, false)">&nbsp;hr
+				<span class="flota-der an207"><input id="entr_FF" class="input_ctl ctlB an40" type="text" onkeypress="return numbersonly(event, false)">&nbsp;m³/hr</span></p>
+			   
+                <div class="img-escala fdo-escCF">
+                     <div id="sliderCF" style="width:21.5em" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+                        <a style="left: 33.3333%;" class="ui-slider-handle ui-state-default ui-corner-all" href="http://www.easy-pool.es/calculator.html#"></a>
+	                 </div>
+	            </div>	 
+		        <p>&nbsp;</p>
+            </div>
+        </div>		
+
+	    <div id="ayudaCF" class="inputArea-ancha fondo-no-sel ocultar">  
+			<h4 class="fondo-no-sel" style="width:100%">&nbsp;&nbsp;<font class="75en">PUMP SIZING -- HELP</font>
+            <label class="ayuda flota-der" id="lblo-ayudaCF"><a href="http://www.easy-pool.es/calculator.html#"><font class="28en">Hide</font>&nbsp;&nbsp;&nbsp;</a></label></h4>
+			<div id="ayudaCF-aux" class="subarea-ayuda fondo-no-sel gs">		        <p class="pbm txt-justificado"><i>Ciclo de filtración</i> (CF) es el tiempo de funcionamieto (en horas) de su motobomba
+                   para recircular por la depuradora el volumen de agua de su piscina. Mientras mas potente la motobomba mayor
+                   caudal recircula y por tanto, menos tiempo necesita, o sea, CF menor, pero mas cara la depuradora
+                  (motobomba y filtro). Se trata de encontrar una solución equilibrada, y para ello, el margen recomendado del CF
+                   es entre 2,5 y 6 hrs</p><p>&nbsp;</p>
+		        <p class="pbm">Para calcular el caudal de la bomba correspondiente a un CF deseado:</p><p>&nbsp;</p>		  
+		        <p class="pbs"><b>1.</b> No olvidar cumplimentar el campo <i>'Volumen agua'</i> en el area <i>Mi Piscina</i></p>
+                <p class="pbs"><b>2.</b> Introduce el valor deseado de CF en el campo <i>'Ciclo filtración'</i></p>
+		        <p class="pbs"><b>3.</b> O mueve el cursor del <i>selector deslizante</i> situado debajo hasta el valor de CF</p>
+                <p class="pbs">&nbsp;&nbsp;&nbsp;deseado.</p>
+                <p class="pbs"><b>4.</b> Pulsa <i>Intro</i> al terminar de introducir valores (no necesario con el <i>selector</i> 
+                </p><p class="pbs">&nbsp;&nbsp;&nbsp;<i>deslizante</i>).</p>
+                <p class="pea">&nbsp;</p>   
+			  
+		        <p class="pbm"> En el campo <i>'Caudal bomba'</i> aparecerá el caudal de la bomba necesaria
+                   para conseguir el CF deseado</p><p>&nbsp;</p>		  
+                <p class="pbm">NOTA: Puede también introducir directamente el caudal de bomba deseado en 
+		           el campo <i>'Caudal bomba'</i> y en el campo <i>'Ciclo filtración'</i> leeremos que CF
+                   obtendremos con ese caudal</p><p>&nbsp;</p><p>&nbsp;</p>
+</div>	  
+		</div>   
+        <div class="inputArea-ancha fondo-no-sel" style="border-bottom:none;">
+
+        <h3 class="fondo-no-sel">&nbsp;&nbsp;<font class="76en"><b>FILTER SIZING</b></font><a href="http://www.easy-pool.es/calculator.html#"><div class="interrog posIntrrogA" id="lblm-ayudaVF"></div></a></h3>
+	        <div class="subarea-estrecha"><font class="79en"><b>Filter type:</b></font><p class="pm5">&nbsp;</p><font class="80en">-Sand</font><br><font class="81en">-Zeolite</font><br>
+		    </div>
+				
+	        <div class="subarea-ancha padd-6">	
+			        <label class="77en oliva"><b>Filter flow rate</b></label>
+				    <span class="flota-der an207"><label class="78en oliva mrg-izq-250"><b>Filter diameter</b></label></span>
+			        <p><input id="entr_FinalVF" class="input_ctl ctlB an40" type="text" onkeypress="return numbersonly(event, false)">&nbsp;m³/hr/m²
+				    <span class="flota-der an207"><input id="entr_DF" class="input_ctl ctlB an40" type="text" onkeypress="return numbersonly(event, false)">&nbsp;mm</span></p>
+                <div class="img-escala fdo-escVF">
+                    <div id="sliderVF" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="width:21.5em">
+                        <a style="left: 37.5%;" class="ui-slider-handle ui-state-default ui-corner-all" href="http://www.easy-pool.es/calculator.html#"></a>
+	                </div>
+	            </div>	 
+		        <p>&nbsp;</p>
+            </div>
+        </div>
+        <div class="inputArea-ancha fondo-no-sel " style="border-bottom:none;">
+	        <div class="subarea-estrecha">	
+			   <font class="79en"><b>Filter type:</b></font><p class="pm5">&nbsp;</p><font class="84en">-Cartridge</font><br><font class="85en">-Diatomite(DE)</font><br>		 
+		    </div>
+	        <div class="subarea-ancha padd-6">													 
+			    <label class="82en oliva"><b>Filter flow rate</b></label>
+				<span class="flota-der an207"><label class="83en oliva mrg-izq-250"><b>Filter area</b></label></span>
+				<p><input id="entr_FinalVFB" class="input_ctl ctlB an40" type="text" onkeypress="return numbersonly(event, false)">&nbsp;m³/hr/m²
+				<span class="flota-der an207"><input id="entr_DFB" class="input_ctl ctlB an40" type="text" onkeypress="return numbersonly(event, false)">&nbsp;m²</span></p>
+                
+				<div class="img-escala fdo-escVFB">
+                    <div id="sliderVFB" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" style="width:21.5em">
+                        <a style="left: 60%;" class="ui-slider-handle ui-state-default ui-corner-all" href="http://www.easy-pool.es/calculator.html#"></a>
+	                </div>
+	            </div>	 
+		        <p>&nbsp;</p>
+		    </div>
+		</div>
+
+		<div id="ayudaVF" class="inputArea-ancha fondo-no-sel ocultar">
+			<h4 class="fondo-no-sel" style="width:100%">&nbsp;&nbsp;<font class="86en">FILTER SIZING -- HELP</font>
+            <label class="ayuda flota-der" id="lblo-ayudaVF"><a href="http://www.easy-pool.es/calculator.html#"><font class="28en">Hide</font>&nbsp;&nbsp;&nbsp;</a></label></h4>
+  	        <div id="ayudaVF-aux" class="subarea-ayuda fondo-no-sel gs"> <p class="pbm txt-justificado">La velocidad de filtración (VF) es aquella por la que pasa el caudal de agua de la bomba
+por el filtro. Se trata de calcular un tamaño de filtro que "case" con la bomba, ni tan pequeño que el agua pase demasiado
+rápida (VF alta, mala calidad de filtración) ni tan grande que después haya problemas a la hora del lavado a contracorriente
+del filtro (caudal insuficiente por VF pequeña).</p><p>&nbsp;</p>
+
+<p class="pbm"> El margen recomendado para la VF  depende del lecho filtrante, y como regla general, es como sigue:</p><p>&nbsp;</p>
+<p class="pbm"><b>* </b><i>Filtros de arena:</i> 37-50 m³/hr/m² (15-20 GPM/FT2).</p>
+<p class="pbm"><b>* </b><i>Filtros de zeolita:</i> 30-40 m³/hr/m² (15-20 GPM/FT2)</p>
+<p class="pbm"><b>* </b><i>Filtros de diatomeas:</i> máximo 5 m³/hr/m².</p>
+<p class="pbm"><b>* </b><i>Filtros de cartucho:</i> máximo  2.5 m³/hr/m².</p><p>&nbsp;</p>
+
+<p class="pbm">Una vez se selecciona la VF, el CACULADOR determina y muestra el diámetro del filtro tipo arena o zeolitas que 
+satisface esa VF. En caso de filtro de diatomeas o cartucho, lo que calcula y muestra es el área del lecho filtrante, pues es ese 
+el parámetro por el que se puede seleccionar en el mercado un filtro de uno y otro tipo.
+</p><p>&nbsp;</p>
+
+<h4>Calcular un filtro de ARENA o ZEOLITAS para su piscina</h4>
+<p>&nbsp;</p> 
+
+<p class="pbs"><b>1a.</b> Calcule en primer lugar la bomba adecuada para el tamaño de su piscina en el panel <i>'Cálculo bomba' </i>. El caudal 
+de la bomba elegida, campo <i>Caudal de bomba</i> se utiliza para calcular después el diámetro del filtro que "casa" con esa bomba.
+</p><p>&nbsp;</p> 	
+<p class="pbs"><b>2a.</b> Una vez elegida la bomba, vaya al panel CALCULO del FILTRO, tipo <i>arena y zeolitas</i></p><p>&nbsp;</p>
+
+<p class="pbs"><b>3a.</b> El CALCULADOR muestra por defecto el diámetro de filtro de arena correspondiente a una buena VF (40 m³/hr/m²), en el campo
+<i>'Diámetro filtro'</i>  Ahora puede Ud. cambiar la VF a su gusto si desea un filtro mayor o menor para la bomba seleccionada. 
+También puede calcular un filtro de zeolita adecuado para la bomba elegida, vaya al siguiente paso.
+</p><p>&nbsp;</p> 
+<p class="pbs"><b>4a.</b> Introduce el valor deseado de CF en el campo <i>'Ciclo filtración'</i> o mueve el cursor del <i>selector deslizante</i>
+situado debajo hasta el valor de CF deseado. Verifica que la nueva VF queda dentro del margen correcto para el tipo de filtro
+que está calculando, <i>arena</i> o <i>zeolitas</i>. El nuevo diámetro para esa nueva VF se muestra en el campo <i>'Diámetro filtro'</i>
+</p><p>&nbsp;</p>
+ 
+<p class="pbs"><b>5a.</b> Puede también introducir directamente el diámetro del filtro deseado en 
+el campo <i>'Diámetro filtro'</i>, y entonces la VF que corresponde a ese nuevo diámetro se muestra el campo 
+<i>'Velocidad filtración'</i>. Verifique de nuevo que la VF esta dentro del margen correcto para
+ su filtro de <i>arena</i> o <i>zeolitas</i></p><p>&nbsp;</p> 
+
+ <h4>Calcular un filtro de DIATOMEAS o CARTUCHO para su piscina</h4>
+<p>&nbsp;</p> 
+
+<p class="pbs"><b>1a.</b> Calcule en primer lugar la bomba adecuada para el tamaño de su piscina en el panel <i>'Calculo bomba'</i>. El caudal 
+de la bomba elegida, campo <i>Caudal de bomba</i> se utiliza para calcular después el area filtrante del filtro que casa con esa bomba.
+</p><p>&nbsp;</p> 	
+<p class="pbs"><b>2a.</b> Una vez elegida la bomba, vaya al panel CALCULO del FILTRO, tipo <i>cartucho y diatomeas</i></p><p>&nbsp;</p>
+
+<p class="pbs"><b>3a.</b> El CALCULADOR muestra por defecto el área de filtro de diatomeas correspondiente a una buena VF (4 m³/hr/m²), en el campo
+<i>'Area filtro'</i> se muestra el área necesaria. Ahora puede Ud. cambiar la VF a su gusto si desea un filtro de mayor o menor área para la bomba seleccionada. 
+También puede calcular aquí un <i>filtro de cartucho</i> adecuado para esta bomba, vaya al siguiente paso.
+</p><p>&nbsp;</p> 
+<p class="pbs"><b>4a.</b> Introduce el valor deseado de CF en el campo <i>'Ciclo filtración'</i> o mueve el cursor del <i>selector deslizante</i>
+situado debajo hasta el valor de CF deseado. Verifica que la nueva VF queda dentro del margen correcto para el tipo de filtro
+que está calculando, <i>diatomeas</i> o <i>cartucho</i>. La nueva área de filtración para esa nueva VF se muestra en el campo <i>'Area filtro'</i>
+</p><p>&nbsp;</p>
+ 
+<p class="pbs"><b>5a.</b> Puede también introducir directamente el área del filtro deseado en 
+el campo <i>'Area filtro'</i> y pulsar <i>Intro</i>. Entoces la VF que corresponde a ese nueva área se muestra en el campo 
+<i>'Velocidad filtración'</i>. Verifique de nuevo que la VF esta dentro del margen correcto para
+ su tipo de filtro, <i>diatomeas</i> o <i>cartucho</i></p><p>&nbsp;</p> 
+
+		   
+</div>
+	    </div>	 
+    </div>	 
+    <div class="col-der">
+  <!--INICIO CODIGO PUBLICIDAD LI-1//-->   
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-1338539579977515";
+/* Skyscraper ancho 160x600A */
+google_ad_slot = "8499645877";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="./Easy calculator for pool design and maintenance_files/show_ads.js.descarga">
+</script><ins id="aswift_3_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent;"><ins id="aswift_3_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent;"><iframe width="160" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_3" name="aswift_3" style="left:0;position:absolute;top:0;width:160px;height:600px;" src="./Easy calculator for pool design and maintenance_files/saved_resource(3).html"></iframe></ins></ins>
+  <!--FIN CODIGO PUBLICIDAD LI-1//--> 
+	
+    </div>
+</div>	
+<div class="content" id="tab5" style="display: none;">
+     <div class="envolvente-ctl">
+		            <p>&nbsp;</p>
+  <p><b>&nbsp;&nbsp; Pool and spa piping system calculations. Coming soon</b></p>
+ 		            <p>&nbsp;</p>
+ <p><b>&nbsp;&nbsp; Cálculo de tuberías de piscinas y spas. Próximamente</b></p>
+		            <p>&nbsp;</p>
+</div>
+ <div class="col-der">
+ 
+</div>
+</div>
+			 </div><!--col-izq2--> 
+
+<!--			 <div class="col-der">col-drecha
+			   hola soy la comumb derecha y ocupo estu
+				  
+			 </div>col-dercha-->
+		     <p>&nbsp;</p>
+		     <div class="footer">
+			 <p>&nbsp;</p>
+			 <p class="letras4"><font class="91en">This website and calculator is intended for individual, non professional, private pool owners. You accept the calculator 
+             may contain errors and inaccuracies. There is no warranty or liability of any kind. The entire risk of using this is within you. We appreciate any comments and tips. 
+             </font></p>
+			 <p class="letras4"><font class="92en">Please contact us by email: <b>info@hablemosdepiscinas.com</b></font></p>
+             <p>&nbsp;</p>
+			 <p class="letras4"><font class="93en">Website designed and programmed by <b>HidroMaster</b>. &nbsp;Copyright © 2012-2013 www.hablemosdepiscinas.com; www.easy-pool.es; <b>All rights reserved.</b></font></p>
+			 </div>
+
+         </div><!--contenedor-->
+	 </div><iframe frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" style="display: none;" src="./Easy calculator for pool design and maintenance_files/saved_resource(4).html"></iframe><iframe frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" style="display: none;" src="./Easy calculator for pool design and maintenance_files/saved_resource(5).html"></iframe><iframe frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" style="display: none;" src="./Easy calculator for pool design and maintenance_files/saved_resource(6).html"></iframe><iframe frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" style="display: none;" src="./Easy calculator for pool design and maintenance_files/saved_resource(7).html"></iframe>  <!--contenedor margen-->
+
+ <script>
+
+NacenTobogs();
+</script>				
+	
+
+
+</body></html>
